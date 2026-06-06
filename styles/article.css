@@ -25,12 +25,12 @@
 @media (min-width: 900px) { .art-grid { grid-template-columns: minmax(0,1fr) 270px; } }
 
 /* prose */
-.prose { max-width: 720px; min-width: 0; }
-.prose > * + * { margin-top: 22px; }
-.prose h2 { font-size: var(--fs-h1); font-weight: 800; letter-spacing: -.015em; margin-top: 44px; line-height: 1.3; scroll-margin-top: 80px; }
+.prose { max-width: 740px; min-width: 0; }
+.prose > * + * { margin-top: 24px; }
+.prose h2 { font-size: clamp(24px, 2.4vw, 28px); font-weight: 800; letter-spacing: 0; margin-top: 42px; line-height: 1.32; scroll-margin-top: 80px; }
 .prose h2 .anchor { color: var(--border-2); font-weight: 600; margin-right: 8px; }
 .prose h3 { font-size: var(--fs-h2); font-weight: 700; margin-top: 30px; scroll-margin-top: 80px; }
-.prose p { font-size: 17px; line-height: 1.78; color: var(--ink); text-wrap: pretty; overflow-wrap: anywhere; }
+.prose p { font-size: 17px; line-height: 1.76; color: var(--ink); text-wrap: pretty; overflow-wrap: anywhere; }
 .prose strong { font-weight: 700; }
 .prose a.inline { color: var(--primary); font-weight: 600; border-bottom: 1px solid var(--primary-tint-2); }
 .prose ul, .prose ol { padding-left: 22px; }
@@ -38,12 +38,25 @@
 .prose li::marker { color: var(--accent); }
 
 /* summary box (TL;DR) */
-.tldr { background: linear-gradient(135deg, var(--primary-tint), #fff); border: 1px solid var(--primary-tint-2); border-radius: var(--r-md); padding: 18px 20px; box-shadow: var(--shadow-sm); }
+.tldr { background: linear-gradient(135deg, var(--primary-tint), #fff); border: 1px solid var(--primary-tint-2); border-radius: var(--r-md); padding: 20px 22px; box-shadow: var(--shadow-sm); }
 :root[data-theme="dark"] .tldr { border-color: var(--primary); }
 .tldr .k { font-size: 11.5px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--primary); margin-bottom: 10px; }
 .tldr ul { margin: 0; padding-left: 20px; }
 .tldr li { font-size: var(--fs-sm); line-height: 1.6; color: var(--ink); margin-top: 6px; }
 .tldr li::marker { color: var(--primary); }
+
+.answer-box { padding: 18px 20px; border-radius: var(--r-md); border: 1px solid var(--primary-tint-2); background: var(--surface); box-shadow: var(--shadow-sm); border-left: 5px solid var(--primary); }
+.answer-box .answer-k { margin-bottom: 8px; color: var(--primary); font-size: 11.5px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.answer-box p { margin: 0; font-size: 18px; line-height: 1.65; }
+.answer-box b { color: var(--primary); }
+.answer-box.tone-amber { border-left-color: var(--accent); border-color: #F0DCB0; }
+.answer-box.tone-amber .answer-k, .answer-box.tone-amber b { color: var(--accent-700); }
+.answer-box.tone-green { border-left-color: var(--success); border-color: #C9E6D3; }
+.answer-box.tone-green .answer-k, .answer-box.tone-green b { color: var(--success); }
+.answer-box.tone-blue { border-left-color: var(--down); border-color: #CBD8FA; }
+.answer-box.tone-blue .answer-k, .answer-box.tone-blue b { color: var(--down); }
+.answer-box.tone-slate { border-left-color: var(--ink-2); border-color: var(--border-2); }
+.answer-box.tone-slate .answer-k, .answer-box.tone-slate b { color: var(--ink-2); }
 
 /* quick reading map */
 .read-map { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
@@ -53,7 +66,7 @@
 .read-map span { color: var(--ink-2); font-size: 12px; line-height: 1.35; }
 
 /* section rhythm */
-.section-block { position: relative; padding: 2px 0 2px 18px; border-left: 4px solid var(--primary); }
+.section-block { position: relative; padding: 0 0 0 18px; border-left: 3px solid var(--primary); }
 .section-block h2 { margin-top: 0; }
 .section-block.tone-blue { border-left-color: var(--down); }
 .section-block.tone-teal { border-left-color: var(--primary); }
@@ -104,8 +117,15 @@
 .art-table td:first-child { font-weight: 700; color: var(--ink); }
 .art-table tr:last-child td { border-bottom: none; }
 
+.insight-panel { padding: 18px; border-radius: var(--r-lg); background: var(--surface-2); border: 1px solid var(--border); }
+.insight-head { margin-bottom: 12px; color: var(--ink); font-size: var(--fs-h3); font-weight: 800; }
+.insight-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.insight-grid div { padding: 14px; border-radius: var(--r-md); background: var(--surface); border: 1px solid var(--border); }
+.insight-grid b { display: block; margin-bottom: 6px; color: var(--primary); font-size: var(--fs-caption); }
+.insight-grid span { display: block; color: var(--ink-2); font-size: var(--fs-caption); line-height: 1.55; }
+
 /* calculation and checklist blocks */
-.calc-card { padding: 20px; border-radius: var(--r-lg); background: linear-gradient(135deg, var(--accent-tint), #fff 58%); border: 1px solid #F0DCB0; box-shadow: var(--shadow-sm); }
+.calc-card { padding: 20px; border-radius: var(--r-lg); background: linear-gradient(135deg, var(--accent-tint), #fff 62%); border: 1px solid #F0DCB0; box-shadow: var(--shadow-sm); }
 .calc-card p { font-size: 16px; }
 .calc-head { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; margin-bottom: 14px; flex-wrap: wrap; }
 .calc-head span { color: var(--accent-700); font-size: 12px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
@@ -116,7 +136,7 @@
 .calc-grid span { display: block; margin-top: 6px; color: var(--ink-2); font-size: 12px; line-height: 1.4; }
 
 .check-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
-.check-grid div { padding: 16px; border-radius: var(--r-md); background: var(--surface); border: 1px solid var(--border); box-shadow: var(--shadow-sm); }
+.check-grid div { padding: 15px 16px; border-radius: var(--r-md); background: var(--surface); border: 1px solid var(--border); box-shadow: var(--shadow-sm); }
 .check-grid div:nth-child(1) { border-top: 4px solid var(--primary); }
 .check-grid div:nth-child(2) { border-top: 4px solid var(--accent); }
 .check-grid div:nth-child(3) { border-top: 4px solid var(--success); }
@@ -205,6 +225,8 @@
   .prose li,
   .tldr,
   .callout,
+  .answer-box,
+  .insight-panel,
   .calc-card,
   .check-grid,
   .article-cta,
@@ -221,10 +243,13 @@
   .prose li { font-size: 16px; }
   .tldr,
   .callout,
+  .answer-box,
+  .insight-panel,
   .calc-card,
   .author-box { padding: 16px; }
   .read-map,
   .mini-math,
+  .insight-grid,
   .calc-grid,
   .check-grid { grid-template-columns: 1fr; }
   .art-table {

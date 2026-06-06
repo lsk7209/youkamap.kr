@@ -310,12 +310,73 @@ function scenarioFor(post) {
   };
 }
 
+function qualityFor(post) {
+  const map = {
+    'fuel-tax-cut-extension': {
+      keyword: '유류세 인하 연장',
+      answer: '유류세 인하 연장은 발표일보다 시행일, 재고 소진, 주유소 유형을 나눠 봐야 실제 체감 시점을 판단할 수 있습니다.',
+      lens: [['검색 의도', '7월부터 바로 싸지는지 확인하려는 운전자'], ['핵심 변수', '시행일·재고·직영/자영 가격 반영 속도'], ['유가지도 판단', '발표 문구보다 주변 가격의 며칠 추세가 더 실용적']]
+    },
+    'self-service-gas-station-price-gap': {
+      keyword: '셀프주유소 싼 이유',
+      answer: '셀프주유소가 싼 이유는 인건비만이 아니라 회전율, 입지, 브랜드 정책, 결제 조건이 함께 작동하기 때문입니다.',
+      lens: [['검색 의도', '셀프주유소가 왜 싼지와 실제 절약 여부 확인'], ['핵심 변수', '리터당 차이·왕복 거리·대기 시간'], ['유가지도 판단', '50원 이상 차이거나 생활 동선 안이면 검토 가치가 큼']]
+    },
+    'seoul-district-gasoline-price-map': {
+      keyword: '서울 휘발유 가격 지도',
+      answer: '서울 휘발유 가격은 가장 싼 구보다 내 이동 동선 안에서 평균 대비 얼마나 낮은지를 보는 편이 실전 절약에 가깝습니다.',
+      lens: [['검색 의도', '서울 구별 가격 차이와 우회 주유 가치 확인'], ['핵심 변수', '서울 평균·인접 구·출퇴근 동선'], ['유가지도 판단', '순위보다 40L 기준 절감액과 이동 비용을 함께 비교']]
+    },
+    'diesel-cheaper-than-gasoline': {
+      keyword: '경유 휘발유 가격 역전',
+      answer: '경유가 휘발유보다 싸졌다는 뉴스는 유종별 제품가, 수요, 세금, 재고가 엇갈린 결과로 봐야 합니다.',
+      lens: [['검색 의도', '경유 가격 하락 이유와 디젤차 유지비 판단'], ['핵심 변수', '국제 제품가·산업 수요·연비·정비비'], ['유가지도 판단', '오늘 단가보다 km당 비용과 장기 유지비가 더 중요']]
+    },
+    'july-fuel-price-outlook': {
+      keyword: '7월 기름값 전망',
+      answer: '7월 기름값 전망은 국제유가 하나로 결정되지 않고 환율, 세금, 정유사 공급가, 주유소 재고 시차가 함께 만듭니다.',
+      lens: [['검색 의도', '7월에 기름값이 오를지 내릴지 판단'], ['핵심 변수', '국제유가·환율·세금·반영 시차'], ['유가지도 판단', '예측보다 분할 주유와 주변 가격 확인 기준을 세우는 것이 실용적']]
+    },
+    'highway-gas-station-price': {
+      keyword: '고속도로 주유소 비싼 이유',
+      answer: '고속도로 주유소가 비싸게 느껴지는 이유는 접근성, 임대 구조, 휴게소 편의성, 우회 비용이 가격에 함께 반영되기 때문입니다.',
+      lens: [['검색 의도', '휴게소 주유소가 왜 비싼지와 우회 주유 여부 확인'], ['핵심 변수', '리터당 차이·톨게이트·시간·안전'], ['유가지도 판단', '출발 전 주유가 가장 단순하고 안전한 절약 방법']]
+    },
+    'lpg-car-total-cost': {
+      keyword: 'LPG 차량 유지비',
+      answer: 'LPG 차량은 리터당 가격만 보면 안 되고 연비, 차량가, 정비, 충전소 접근성을 합친 총비용으로 판단해야 합니다.',
+      lens: [['검색 의도', 'LPG 차량으로 갈아탈 가치와 유지비 확인'], ['핵심 변수', 'km당 비용·연간 주행거리·충전 동선'], ['유가지도 판단', '주행거리가 길고 충전소가 가까울수록 검토 가치가 커짐']]
+    },
+    'international-oil-to-domestic-price': {
+      keyword: '국제유가 국내 주유소 가격 반영',
+      answer: '국제유가가 국내 주유소 가격에 바로 반영되지 않는 이유는 정유사 공급가, 유통, 재고, 세금 단계를 거치기 때문입니다.',
+      lens: [['검색 의도', '국제유가 뉴스와 동네 가격 차이의 이유 확인'], ['핵심 변수', '제품가·공급가·재고·세금'], ['유가지도 판단', '하루 뉴스보다 1~2주 가격 흐름을 함께 보는 것이 정확']]
+    },
+    'regional-fuel-price-comparison-june': {
+      keyword: '지역별 유가 비교',
+      answer: '지역별 유가 비교는 도시 순위보다 내 생활권 안에서 평균 대비 얼마나 차이가 나는지를 봐야 실제 절약으로 이어집니다.',
+      lens: [['검색 의도', '부산·대구·광주 등 도시별 가격 차이 확인'], ['핵심 변수', '도시 평균·외곽 가격·생활 동선'], ['유가지도 판단', '평균은 방향, 실제 주유는 주변 개별 가격으로 결정']]
+    },
+    'cheap-gas-station-vs-regular-annual-savings': {
+      keyword: '알뜰주유소 일반 주유소 차이',
+      answer: '알뜰주유소와 일반 주유소 차이는 리터당 가격을 연간 주유 횟수로 확장하고 카드 할인까지 포함해 비교해야 합니다.',
+      lens: [['검색 의도', '알뜰주유소를 쓰면 1년에 얼마나 아끼는지 확인'], ['핵심 변수', '리터당 차이·월 주유 횟수·카드 할인'], ['유가지도 판단', '동선 안에 있으면 누적 절감, 멀면 일반 주유소가 나을 수 있음']]
+    }
+  };
+  return map[post.slug] || {
+    keyword: post.title,
+    answer: post.description,
+    lens: [['검색 의도', '주유비 판단 기준 확인'], ['핵심 변수', '가격·동선·기준일'], ['유가지도 판단', '실제 주유 전 원천 가격 확인']]
+  };
+}
+
 function articleHtml(post, allPosts) {
   const related = allPosts.filter(p => p.slug !== post.slug).slice(0, 3);
   const prev = allPosts[allPosts.findIndex(p => p.slug === post.slug) + 1];
   const next = allPosts[allPosts.findIndex(p => p.slug === post.slug) - 1];
   const tone = toneFor(post);
   const scenario = scenarioFor(post);
+  const quality = qualityFor(post);
   const toc = post.sections.map(([h], i) => `<li><a href="#s${i + 1}">${esc(h)}</a></li>`).join('\n            ');
   const sections = post.sections.map(([h, body], i) => `
         <section class="section-block ${['tone-teal', 'tone-blue', 'tone-amber', 'tone-green'][i % 4]}">
@@ -341,6 +402,8 @@ function articleHtml(post, allPosts) {
         datePublished: post.date,
         dateModified: today,
         inLanguage: 'ko-KR',
+        keywords: [quality.keyword, post.category, '유가지도', '주유비', '오피넷'],
+        about: { '@type': 'Thing', name: quality.keyword },
         author: { '@type': 'Organization', name: '유가지도 편집팀' },
         publisher: { '@type': 'Organization', name: '유가지도', url: `${site}/` },
         mainEntityOfPage: { '@type': 'WebPage', '@id': `${site}/blog/${post.slug}/` }
@@ -366,6 +429,7 @@ function articleHtml(post, allPosts) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(post.title)} — 유가지도</title>
 <meta name="description" content="${esc(post.description)}">
+<meta name="keywords" content="${esc([quality.keyword, post.category, '유가지도', '주유비', '오피넷'].join(', '))}">
 <link rel="canonical" href="${site}/blog/${post.slug}/">
 <meta property="og:site_name" content="유가지도">
 <meta property="og:type" content="article">
@@ -445,10 +509,15 @@ ${adsense}
           <ul>${post.summary.map(s => `<li>${esc(s)}</li>`).join('')}</ul>
         </div>
 
+        <div class="answer-box ${tone.className}" id="answer">
+          <div class="answer-k">검색 질문에 대한 답</div>
+          <p><b>${esc(quality.keyword)}</b>: ${esc(quality.answer)}</p>
+        </div>
+
         <div class="read-map" aria-label="이 글을 읽는 순서">
+          <a href="#answer"><b>답변</b><span>핵심 결론 확인</span></a>
           <a href="#calc"><b>계산</b><span>내 주유량으로 환산</span></a>
           <a href="#checklist"><b>확인</b><span>주유 전 체크</span></a>
-          <a href="#source"><b>출처</b><span>오피넷·공공자료</span></a>
         </div>
 ${sections}
         <figure class="figure">
@@ -459,6 +528,13 @@ ${sections}
           </table>
           <figcaption>유가지도 편집 기준표 · 기준일 ${prettyDate(today)}</figcaption>
         </figure>
+
+        <div class="insight-panel">
+          <div class="insight-head">유가지도 분석 포인트</div>
+          <div class="insight-grid">
+            ${quality.lens.map(([k, v]) => `<div><b>${esc(k)}</b><span>${esc(v)}</span></div>`).join('\n            ')}
+          </div>
+        </div>
 
         <h2 id="calc">내 주유비로 바꿔 계산하기</h2>
         <div class="calc-card">
