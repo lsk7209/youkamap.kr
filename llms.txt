@@ -1,20 +1,24 @@
 # 유가지도
 
-유가지도는 한국 운전자를 위해 유가 구조, 유류세, 지역별 주유 가격 차이, 절약 팁을 설명하는 한국어 정보 사이트입니다.
+유가지도는 한국 운전자를 위해 유류세, 주유비, 지역별 유가 차이, 주유 절약 판단법을 설명하는 정보 사이트입니다.
 
-## 주요 페이지
+## Canonical URLs
 
-- 홈: https://youkamap.kr/
-- 블로그 목록: https://youkamap.kr/blog/
-- 대표 글: https://youkamap.kr/blog/fuel-tax-cut-extension/
-- 사이트맵: https://youkamap.kr/sitemap.xml
-- RSS 피드: https://youkamap.kr/feed.xml
-- 개인정보처리방침: https://youkamap.kr/privacy/
-- 문의: https://youkamap.kr/contact/
+- https://youkamap.kr/
+- https://youkamap.kr/blog/
+- https://youkamap.kr/blog/fuel-tax-cut-extension/
+- https://youkamap.kr/blog/self-service-gas-station-price-gap/
+- https://youkamap.kr/blog/seoul-district-gasoline-price-map/
+- https://youkamap.kr/blog/diesel-cheaper-than-gasoline/
+- https://youkamap.kr/blog/july-fuel-price-outlook/
+- https://youkamap.kr/blog/highway-gas-station-price/
+- https://youkamap.kr/blog/lpg-car-total-cost/
+- https://youkamap.kr/blog/international-oil-to-domestic-price/
+- https://youkamap.kr/blog/regional-fuel-price-comparison-june/
+- https://youkamap.kr/blog/cheap-gas-station-vs-regular-annual-savings/
+- https://youkamap.kr/privacy/
+- https://youkamap.kr/contact/
 
-## 콘텐츠 원칙
+## Source Policy
 
-- 가격, 세금, 정책 수치는 기준일과 출처를 함께 적습니다.
-- 주요 원천은 한국석유공사 오피넷, 공공데이터포털, 정부 고시입니다.
-- 주유소나 지역을 자극적으로 평가하지 않고, 전국 평균 대비 차이와 조건을 설명합니다.
-- 일부 문장 작성에는 AI 보조를 사용할 수 있으나, 수치와 출처는 사람이 검수한 공개 자료를 기준으로 합니다.
+가격과 정책 설명은 한국석유공사 오피넷, 공공데이터포털, 정부 고시 등 공개 자료를 우선합니다. 실제 주유소 가격과 차이가 있을 수 있으므로 기준일과 출처를 함께 확인해야 합니다.

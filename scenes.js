@@ -31,7 +31,6 @@
       <button class="btn btn-primary btn-sm header-cta">계산</button>
     </div>
     <div class="scene">
-      <div class="ad-slot ad-anchor"><span class="ad-label">광고 · AD</span><span class="ad-size">320×50</span></div>
       <nav class="crumb"><a href="#">홈</a><span class="sep">›</span><a href="#">지역</a><span class="sep">›</span><span class="cur">서울</span></nav>
       <h1 style="font-size:24px;margin:0;letter-spacing:-.01em;line-height:1.25">서울 휘발유, 오늘 얼마?</h1>
       <div class="price-cards" style="grid-template-columns:1fr 1fr">
@@ -49,7 +48,6 @@
           <div class="tax-result" style="padding:12px"><div class="line" style="font-size:15px">5만원 중 세금 <b class="hl">22,900원</b> <span class="pct">(45.8%)</span></div></div>
         </div>
       </div>
-      <div class="ad-slot ad-inline" style="height:200px"><span class="ad-label">광고 · AD</span><span class="ad-size">본문 중간 · 300×250</span></div>
       ${faqBlock}
       <div class="site-footer" style="padding:16px">
         <p class="footer-disc" style="font-size:11px">출처: 한국석유공사 오피넷 · data.go.kr. 일부 콘텐츠는 AI 작성 보조를 사용했습니다.</p>
@@ -70,7 +68,6 @@
       <button class="btn btn-primary btn-sm header-cta">유류세 계산</button>
     </div>
     <div class="scene-d">
-      <div class="ad-slot ad-leaderboard"><span class="ad-label">광고 · AD</span><span class="ad-size">상단 리더보드 · 728×90</span></div>
       <nav class="crumb"><a href="#">홈</a><span class="sep">›</span><a href="#">지역</a><span class="sep">›</span><a href="#">서울</a><span class="sep">›</span><span class="cur">강남구</span></nav>
       <h1 style="font-size:34px;margin:0;letter-spacing:-.02em;line-height:1.15;font-weight:800">서울 강남구 유가 — 왜 비싸고, 세금은 얼마인가</h1>
       <div style="display:grid;grid-template-columns:1fr 320px;gap:24px;align-items:start">
@@ -92,7 +89,6 @@
             <div class="cmp-bar-row"><span class="rg">서초구</span><div class="cmp-track"><div class="cmp-fill" style="width:90%"></div><div class="cmp-avg-line" style="left:78%"></div></div><span class="cmp-val">1,778원</span></div>
             <div class="cmp-bar-row"><span class="rg">송파구</span><div class="cmp-track"><div class="cmp-fill" style="width:82%"></div><div class="cmp-avg-line" style="left:78%"></div></div><span class="cmp-val">1,731원</span></div>
           </div>
-          <div class="ad-slot ad-inline"><span class="ad-label">광고 · AD</span><span class="ad-size">본문 중간 인피드 · 반응형</span></div>
           ${faqBlock}
         </div>
         <aside class="stack" style="gap:16px;position:sticky;top:16px">
@@ -111,7 +107,6 @@
             <div class="persona-quote">셀프만 잘 골라도 월 2~3만원 아껴요.</div>
             <div class="persona-note">ⓘ AI 작성 보조</div>
           </div>
-          <div class="ad-slot ad-inline" style="height:250px"><span class="ad-label">광고 · AD</span><span class="ad-size">사이드바 · 300×250</span></div>
         </aside>
       </div>
       <div class="site-footer" style="padding:20px 28px">
