@@ -102,6 +102,29 @@
           }
         }
       ]
+    },
+    {
+      "@type": "HowTo",
+      "name": "경유 휘발유 가격 역전 판단 방법",
+      "description": "경유가 휘발유보다 싸진 날, 무슨 일이 있었나을 실제 주유비 판단으로 바꾸는 계산 순서입니다.",
+      "totalTime": "PT3M",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "기준 가격 확인",
+          "text": "오피넷 또는 현장 가격표에서 후보 주유소의 리터당 가격을 확인합니다."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "주유량 적용",
+          "text": "리터당 가격 차이에 실제 주유량을 곱해 1회 차이를 계산합니다."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "우회 비용 비교",
+          "text": "이동 거리, 대기 시간, 카드 할인, 안전성을 함께 비교해 총비용을 판단합니다."
+        }
+      ]
     }
   ]
 }
@@ -231,6 +254,10 @@
             <span>유종 비교</span>
             <strong>오늘 단가보다 내 차의 km당 비용을 본다</strong>
           </div>
+          <div class="formula-strip">
+            <b>판단 공식</b>
+            <span>리터당 차이 × 주유량 × 월 주유 횟수 - 우회 비용</span>
+          </div>
           <div class="calc-grid">
             <div><b>리터당 가격</b><span>표시 가격 비교</span></div>
             <div><b>연비</b><span>km당 비용 환산</span></div>
@@ -246,6 +273,13 @@
           <div><b>결제 조건</b><span>오피넷 공개 가격, 현장 가격표, 카드 청구 할인을 분리해서 봅니다.</span></div>
           <div><b>주유소 유형</b><span>셀프, 알뜰, 직영, 일반 주유소는 운영 방식과 동선이 다릅니다.</span></div>
           <div><b>이동 경로</b><span>출발지와 목적지 주변 가격을 함께 확인해 불필요한 우회를 줄입니다.</span></div>
+        </div>
+
+        <div class="decision-matrix">
+          <div class="dm-head">빠른 판단 기준</div>
+          <div class="dm-row good"><b>바로 써먹을 때</b><span>가격 차이가 크고, 주유소가 기존 이동 동선 안에 있을 때</span></div>
+          <div class="dm-row watch"><b>다시 계산할 때</b><span>우회 거리나 대기 시간이 길고, 카드 할인 조건이 다를 때</span></div>
+          <div class="dm-row avoid"><b>피할 때</b><span>기준일이 불명확하거나, 기사 제목만 보고 주유 시점을 정할 때</span></div>
         </div>
 
         <h2 id="mistakes">자주 생기는 오해</h2>
