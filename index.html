@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>유가지도 — 프로토타입</title>
+<meta name="description" content="유가지도 정적 프로토타입: 유가 구조, 유류세 계산기, 블로그 허브, 글 상세 디자인 시스템입니다.">
+<link rel="canonical" href="https://youkamap.kr/">
+<meta property="og:site_name" content="유가지도">
+<meta property="og:type" content="website">
+<meta property="og:title" content="유가지도 — 프로토타입">
+<meta property="og:description" content="유가 구조와 유류세를 신뢰감 있게 설명하는 pSEO 디자인 프로토타입입니다.">
+<meta property="og:url" content="https://youkamap.kr/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="유가지도 — 프로토타입">
+<meta name="twitter:description" content="유가 구조와 유류세를 신뢰감 있게 설명하는 pSEO 디자인 프로토타입입니다.">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="styles/tokens.css">
+<link rel="stylesheet" href="styles/components.css">
+<style>
+  .home {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 56px 20px 96px;
+  }
+  .home-hero {
+    padding: 34px 0 38px;
+    border-bottom: 1px solid var(--border);
+  }
+  .home-hero h1 {
+    margin: 16px 0 12px;
+    max-width: 760px;
+    font-size: clamp(34px, 7vw, 58px);
+    line-height: 1.08;
+    letter-spacing: -.02em;
+    overflow-wrap: anywhere;
+  }
+  .home-hero p {
+    max-width: 58ch;
+    margin: 0;
+    color: var(--ink-2);
+    font-size: 17px;
+    overflow-wrap: anywhere;
+  }
+  .home-grid {
+    display: grid;
+    gap: 16px;
+    margin-top: 28px;
+  }
+  @media (min-width: 760px) {
+    .home-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+  .home-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 220px;
+    padding: 22px;
+    border: 1px solid var(--border);
+    border-radius: var(--r-lg);
+    background: var(--surface);
+    box-shadow: var(--shadow-sm);
+  }
+  .home-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary-tint-2);
+  }
+  .home-card .k {
+    width: max-content;
+    padding: 4px 10px;
+    border-radius: var(--r-pill);
+    background: var(--primary-tint);
+    color: var(--primary);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+  .home-card h2 {
+    margin: 0;
+    color: var(--ink);
+    font-size: 22px;
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+  }
+  .home-card p {
+    margin: 0;
+    color: var(--ink-2);
+    font-size: var(--fs-sm);
+    overflow-wrap: anywhere;
+  }
+  .home-card .go {
+    margin-top: auto;
+    color: var(--primary);
+    font-size: var(--fs-sm);
+    font-weight: 800;
+  }
+  @media (max-width: 560px) {
+    .home { padding-inline: 20px; }
+    .home-hero h1 {
+      font-size: 31px;
+      line-height: 1.14;
+    }
+    .home-hero h1,
+    .home-hero p,
+    .home-card h2,
+    .home-card p {
+      word-break: break-all;
+      line-break: anywhere;
+    }
+    .home-card {
+      min-height: 0;
+      padding: 20px;
+    }
+  }
+</style>
+</head>
+<body>
+<main class="home">
+  <header class="home-hero">
+    <span class="eyebrow">유가지도 · Static Prototype</span>
+    <h1>유가 구조와 유류세를 신뢰감 있게 설명하는 pSEO 디자인 프로토타입</h1>
+    <p>디자인 시스템, 블로그 허브, 글 상세 페이지를 한 번에 확인할 수 있는 로컬 진입점입니다. 모든 화면은 같은 토큰과 컴포넌트를 공유합니다.</p>
+  </header>
+
+  <section class="home-grid" aria-label="프로토타입 화면">
+    <a class="home-card" href="유가지도 디자인 시스템.html">
+      <span class="k">Design System</span>
+      <h2>유가지도 디자인 시스템</h2>
+      <p>컬러, 타이포그래피, 가격 카드, 유류세 계산기, 차트, 출처 배지, FAQ, 광고 슬롯까지 전체 컴포넌트 규칙입니다.</p>
+      <span class="go">열기 →</span>
+    </a>
+    <a class="home-card" href="유가지도 블로그.html">
+      <span class="k">Blog Hub</span>
+      <h2>유가 블로그 목록</h2>
+      <p>카테고리 필터, 피처드 글, 포스트 카드 그리드, 인기글, 뉴스레터와 광고 슬롯을 포함한 블로그 허브입니다.</p>
+      <span class="go">열기 →</span>
+    </a>
+    <a class="home-card" href="유가지도 글 상세.html">
+      <span class="k">Article</span>
+      <h2>유류세 글 상세</h2>
+      <p>요약, 본문, 목차, 공유, FAQ, 관련글, 출처 고지를 갖춘 권위형 에버그린/시의성 콘텐츠 상세 페이지입니다.</p>
+      <span class="go">열기 →</span>
+    </a>
+  </section>
+</main>
+</body>
+</html>

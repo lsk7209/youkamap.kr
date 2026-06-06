@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>유가지도 — 블로그</title>
+<meta name="description" content="유가지도 블로그: 유류세 구조, 유가뉴스, 지역별 가격차, 절약 팁을 오피넷 데이터 기반으로 읽습니다.">
+<link rel="canonical" href="https://youkamap.kr/유가지도%20블로그.html">
+<meta property="og:site_name" content="유가지도">
+<meta property="og:type" content="website">
+<meta property="og:title" content="유가지도 — 블로그">
+<meta property="og:description" content="유류세 구조, 유가뉴스, 지역별 가격차, 절약 팁을 오피넷 데이터 기반으로 읽습니다.">
+<meta property="og:url" content="https://youkamap.kr/유가지도%20블로그.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="유가지도 — 블로그">
+<meta name="twitter:description" content="유류세 구조, 유가뉴스, 지역별 가격차, 절약 팁을 오피넷 데이터 기반으로 읽습니다.">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="styles/tokens.css">
+<link rel="stylesheet" href="styles/components.css">
+<link rel="stylesheet" href="styles/blog.css">
+</head>
+<body>
+
+<!-- ===== Header (sticky) ===== -->
+<div class="blog-shell">
+  <header class="site-header" data-screen-label="블로그 헤더">
+    <div class="brand"><span class="brand-mark">유</span>유가지도</div>
+    <nav class="site-nav">
+      <a href="유가지도 디자인 시스템.html">유가</a>
+      <a href="유가지도 디자인 시스템.html">유류세</a>
+      <a href="유가지도 디자인 시스템.html">지역</a>
+      <a href="유가지도 블로그.html" style="color:var(--primary);font-weight:700">블로그</a>
+    </nav>
+    <button class="btn btn-primary btn-sm header-cta">유류세 계산</button>
+  </header>
+</div>
+
+<main class="blog" data-screen-label="블로그 목록">
+
+  <!-- top ad -->
+  <div class="ad-slot ad-leaderboard" style="margin-top:18px"><span class="ad-label">광고 · AD</span><span class="ad-size">상단 리더보드 · 728×90 / 반응형</span></div>
+
+  <!-- breadcrumb + hero -->
+  <section class="blog-hero">
+    <nav class="crumb"><a href="유가지도 디자인 시스템.html">홈</a><span class="sep">›</span><span class="cur">블로그</span></nav>
+    <h1>유가 블로그 — 왜 비싼지, 어떻게 아끼는지</h1>
+    <p>오피넷 데이터로 읽는 기름값 이야기. 유류세 구조부터 지역별 가격차, 절약 노하우까지 한 문장으로 답합니다.</p>
+  </section>
+
+  <!-- category filter -->
+  <nav class="cat-bar" id="catBar" aria-label="카테고리 필터">
+    <button class="cat-pill on" data-cat="all">전체</button>
+    <button class="cat-pill" data-cat="news">유가뉴스</button>
+    <button class="cat-pill" data-cat="tax">유류세</button>
+    <button class="cat-pill" data-cat="region">지역가이드</button>
+    <button class="cat-pill" data-cat="tip">절약팁</button>
+    <button class="cat-pill" data-cat="ever">에버그린</button>
+  </nav>
+
+  <div class="blog-body">
+    <!-- ===== FEED ===== -->
+    <div>
+      <!-- featured -->
+      <article class="featured post-card" data-cat="tax" style="box-shadow:var(--shadow-sm)">
+        <div class="thumb t-tax"><div class="ph"><span class="ico">🧾</span>대표 이미지 영역</div></div>
+        <div class="body">
+          <span class="ftag">Editor's pick</span>
+          <span class="chip-cat tax" style="align-self:flex-start">유류세</span>
+          <h2><a href="유가지도 글 상세.html" style="color:inherit">유류세 인하 연장, 7월부터 무엇이 어떻게 바뀌나</a></h2>
+          <p>인하율 단계 조정과 적용 시점, 그리고 주유소 가격에 실제로 반영되기까지의 시차를 한눈에 정리했습니다.</p>
+          <div class="post-meta"><span>2026.06.05</span><span class="dot"></span><span>읽는 시간 4분</span><span class="dot"></span><span>편집팀</span></div>
+          <div class="src-badge" style="margin-top:4px">
+            <svg class="v" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/></svg>
+            출처: <b>오피넷</b><span class="dot"></span>data.go.kr<span class="dot"></span><span class="rel-time">⟳ 3시간 전</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- post grid -->
+      <div class="post-grid" id="postGrid">
+
+        <article class="post-card" data-cat="tip">
+          <div class="thumb t-tip"><div class="ph"><span class="ico">💡</span></div></div>
+          <div class="pc-body">
+            <span class="chip-cat tip" style="align-self:flex-start">절약팁</span>
+            <h3><a href="#">셀프주유소가 30~80원 싼 진짜 이유</a></h3>
+            <p class="excerpt">인건비 구조와 회전율이 가격에 어떻게 반영되는지 뜯어봤습니다.</p>
+            <div class="post-meta"><span>06.04</span><span class="dot"></span><span>3분</span></div>
+          </div>
+        </article>
+
+        <article class="post-card" data-cat="region">
+          <div class="thumb t-region"><div class="ph"><span class="ico">📍</span></div></div>
+          <div class="pc-body">
+            <span class="chip-cat region" style="align-self:flex-start">지역가이드</span>
+            <h3><a href="#">서울 25개 구 휘발유 가격 지도</a></h3>
+            <p class="excerpt">가장 비싼 구와 가장 싼 구, 그 차이는 리터당 134원.</p>
+            <div class="post-meta"><span>06.04</span><span class="dot"></span><span>5분</span></div>
+          </div>
+        </article>
+
+        <article class="post-card" data-cat="news">
+          <div class="thumb t-news"><div class="ph"><span class="ico">📰</span></div></div>
+          <div class="pc-body">
+            <span class="chip-cat news" style="align-self:flex-start">유가뉴스</span>
+            <h3><a href="#">경유가 휘발유보다 싸진 날, 무슨 일이 있었나</a></h3>
+            <p class="excerpt">국제 제품가 역전이 국내 가격에 남긴 흔적을 추적합니다.</p>
+            <div class="post-meta"><span>06.03</span><span class="dot"></span><span>4분</span></div>
+          </div>
+        </article>
+
+        <article class="post-card" data-cat="ever">
+          <div class="thumb t-ever"><div class="ph"><span class="ico">📈</span></div></div>
+          <div class="pc-body">
+            <span class="chip-cat ever" style="align-self:flex-start">에버그린</span>
+            <h3><a href="#">유가 추세로 보는 7월 기름값 전망</a></h3>
+            <p class="excerpt">국제유가·환율·재고 세 변수로 읽는 방향성.</p>
+            <div class="post-meta"><span>06.02</span><span class="dot"></span><span>6분</span></div>
+          </div>
+        </article>
+
+        <article class="post-card" data-cat="tip">
+          <div class="thumb t-tip"><div class="ph"><span class="ico">🛣️</span></div></div>
+          <div class="pc-body">
+            <span class="chip-cat tip" style="align-self:flex-start">절약팁</span>
+            <h3><a href="#">고속도로 주유소는 왜 더 비쌀까</a></h3>
+            <p class="excerpt">임대 구조와 입지 프리미엄, 그리고 우회 전략.</p>
+            <div class="post-meta"><span>06.01</span><span class="dot"></span><span>3분</span></div>
+          </div>
+        </article>
+
+        <article class="post-card" data-cat="ever">
+          <div class="thumb t-ever"><div class="ph"><span class="ico">⛽</span></div></div>
+          <div class="pc-body">
+            <span class="chip-cat ever" style="align-self:flex-start">에버그린</span>
+            <h3><a href="#">LPG 차량, 지금 갈아탈 만할까</a></h3>
+            <p class="excerpt">연료비·차량가·세제 혜택을 5년 총비용으로 비교.</p>
+            <div class="post-meta"><span>05.30</span><span class="dot"></span><span>7분</span></div>
+          </div>
+        </article>
+
+        <article class="post-card" data-cat="tax">
+          <div class="thumb t-tax"><div class="ph"><span class="ico">🌏</span></div></div>
+          <div class="pc-body">
+            <span class="chip-cat tax" style="align-self:flex-start">유류세</span>
+            <h3><a href="#">국제유가 → 국내 가격, 2주의 메커니즘</a></h3>
+            <p class="excerpt">도입가에서 소비자가까지, 가격이 흐르는 경로.</p>
+            <div class="post-meta"><span>05.29</span><span class="dot"></span><span>5분</span></div>
+          </div>
+        </article>
+
+        <article class="post-card" data-cat="region">
+          <div class="thumb t-region"><div class="ph"><span class="ico">🗺️</span></div></div>
+          <div class="pc-body">
+            <span class="chip-cat region" style="align-self:flex-start">지역가이드</span>
+            <h3><a href="#">부산·대구·광주, 6월 유가 비교</a></h3>
+            <p class="excerpt">영남·호남 주요 도시의 평균가와 최저가 주유소.</p>
+            <div class="post-meta"><span>05.28</span><span class="dot"></span><span>4분</span></div>
+          </div>
+        </article>
+
+        <article class="post-card" data-cat="tip">
+          <div class="thumb t-tip"><div class="ph"><span class="ico">📲</span></div></div>
+          <div class="pc-body">
+            <span class="chip-cat tip" style="align-self:flex-start">절약팁</span>
+            <h3><a href="#">알뜰주유소 vs 일반, 1년이면 얼마 차이?</a></h3>
+            <p class="excerpt">월 2회 주유 가정으로 계산한 연간 절감액.</p>
+            <div class="post-meta"><span>05.27</span><span class="dot"></span><span>3분</span></div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- empty state -->
+      <div class="empty-state" id="emptyState">해당 카테고리의 글이 아직 없습니다.</div>
+
+      <!-- mid inline ad -->
+      <div class="ad-slot ad-inline" style="margin-top:24px"><span class="ad-label">광고 · AD</span><span class="ad-size">본문 중간 인피드 · 반응형</span></div>
+
+      <!-- pager -->
+      <nav class="pager" aria-label="페이지">
+        <span class="nav" style="color:var(--ink-3)">이전</span>
+        <span class="cur">1</span>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <span class="gap">…</span>
+        <a href="#">8</a>
+        <a href="#" class="nav">다음</a>
+      </nav>
+    </div>
+
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="blog-aside">
+      <div class="aside-box">
+        <h4>인기 글</h4>
+        <div class="pop-list">
+          <div class="pop-item"><span class="pop-rank">1</span><div><a href="유가지도 글 상세.html">유류세 인하 연장, 7월부터 무엇이 바뀌나</a><div class="pm">유류세 · 4분</div></div></div>
+          <div class="pop-item"><span class="pop-rank">2</span><div><a href="#">셀프주유소가 30~80원 싼 진짜 이유</a><div class="pm">절약팁 · 3분</div></div></div>
+          <div class="pop-item"><span class="pop-rank">3</span><div><a href="#">서울 25개 구 휘발유 가격 지도</a><div class="pm">지역가이드 · 5분</div></div></div>
+          <div class="pop-item"><span class="pop-rank">4</span><div><a href="#">유가 추세로 보는 7월 기름값 전망</a><div class="pm">에버그린 · 6분</div></div></div>
+          <div class="pop-item"><span class="pop-rank">5</span><div><a href="#">국제유가 → 국내 가격, 2주의 메커니즘</a><div class="pm">유류세 · 5분</div></div></div>
+        </div>
+      </div>
+
+      <div class="aside-box" style="padding:14px 16px">
+        <div class="src-badge" style="border:none;background:transparent;padding:0">
+          <svg class="v" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/></svg>
+          모든 가격 데이터의 출처는 <b>한국석유공사 오피넷</b>입니다.
+        </div>
+      </div>
+
+      <div class="ad-slot ad-inline" style="height:250px"><span class="ad-label">광고 · AD</span><span class="ad-size">사이드바 · 300×250</span></div>
+
+      <div class="aside-box nl-box">
+        <h4>주간 유가 브리핑</h4>
+        <p>매주 월요일, 이번 주 기름값 전망과 절약 팁을 메일로.</p>
+        <form class="nl-form" onsubmit="return false">
+          <input type="email" placeholder="이메일 주소" aria-label="이메일">
+          <button type="submit">구독</button>
+        </form>
+      </div>
+    </aside>
+  </div>
+
+  <!-- footer -->
+  <footer class="site-footer" style="margin-top:48px;border-radius:var(--r-md);border:1px solid var(--border)">
+    <div class="footer-links">
+      <a href="유가지도 디자인 시스템.html">서비스 소개</a>
+      <a href="유가지도 디자인 시스템.html">디자인 시스템</a>
+      <a href="#">개인정보처리방침</a>
+      <a href="#">문의</a>
+    </div>
+    <p class="footer-disc"><b>데이터 출처:</b> 한국석유공사 오피넷, 공공데이터포털(data.go.kr). 표시 가격은 기준일 평균이며 실제가와 차이가 있을 수 있습니다. <b>일부 콘텐츠는 AI 작성 보조</b>를 사용했으며, 통계·차트는 원천 데이터를 가공한 결과물입니다.</p>
+    <p style="margin-top:12px"><a href="유가지도 디자인 시스템.html" class="ds-link">← 디자인 시스템 문서로 돌아가기</a></p>
+  </footer>
+</main>
+
+<!-- Tweaks panel mounts here -->
+<div id="tweaksRoot"></div>
+
+<script src="blog.js"></script>
+<script src="tweaks.js"></script>
+</body>
+</html>

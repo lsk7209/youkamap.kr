@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>유가지도 — 디자인 시스템</title>
+<meta name="description" content="유가지도 디자인 시스템: 유가 정보와 유류세 계산 도구를 위한 컬러, 타이포그래피, 컴포넌트 규칙입니다.">
+<link rel="canonical" href="https://youkamap.kr/유가지도%20디자인%20시스템.html">
+<meta property="og:site_name" content="유가지도">
+<meta property="og:type" content="website">
+<meta property="og:title" content="유가지도 — 디자인 시스템">
+<meta property="og:description" content="유가 정보와 유류세 계산 도구를 위한 컬러, 타이포그래피, 컴포넌트 규칙입니다.">
+<meta property="og:url" content="https://youkamap.kr/유가지도%20디자인%20시스템.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="유가지도 — 디자인 시스템">
+<meta name="twitter:description" content="유가 정보와 유류세 계산 도구를 위한 컬러, 타이포그래피, 컴포넌트 규칙입니다.">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="styles/tokens.css">
+<link rel="stylesheet" href="styles/components.css">
+</head>
+<body>
+<main class="doc">
+
+  <!-- ============ HEAD ============ -->
+  <header class="doc-head">
+    <span class="eyebrow">유가지도 · Design System</span>
+    <h1>왜 비싼가, 세금은 얼마인가, 언제 내려가나<br>— 신뢰감 있게 설명하는 유가 정보 시스템</h1>
+    <p>한국석유공사 오피넷 공공데이터 기반의 유가 구조·정책 권위 콘텐츠와 유류세 계산 도구를 위한 디자인 시스템. 데이터는 또렷하게, 도구는 친근하게, 장식은 최소로.</p>
+    <div class="meta-row">
+      <span class="meta-chip"><b>모바일 퍼스트</b> · 360 / 1280</span>
+      <span class="meta-chip">폰트 <b>Pretendard</b> · tabular figures</span>
+      <span class="meta-chip">가격 변동 <b>색 + 아이콘 + 부호</b> 3중 표기</span>
+      <span class="meta-chip">WCAG <b>AA</b> 대비</span>
+      <span class="meta-chip">애드센스 · Core Web Vitals</span>
+    </div>
+    <div style="margin-top:18px">
+      <a href="유가지도 블로그.html" class="btn btn-teal btn-sm" style="text-decoration:none">블로그 목록 페이지 보기 →</a>
+    </div>
+  </header>
+
+  <!-- ============ COLOR ============ -->
+  <section class="section" id="color">
+    <div class="section-head">
+      <span class="idx">01</span>
+      <h2>컬러 토큰</h2>
+      <span class="sub">신뢰형 데이터 · 가독성 우선</span>
+    </div>
+
+    <div class="kit-grid cols-2">
+      <!-- neutrals -->
+      <div class="demo">
+        <div class="demo-label"><span class="t">중립 · 서피스</span><span class="d">배경 / 본문 / 보더</span></div>
+        <div class="demo-body">
+          <div class="swatch-grid">
+            <div class="swatch"><div class="chip" style="background:#FAFAF8;box-shadow:inset 0 0 0 1px var(--border)"></div><div class="meta"><div class="nm">배경</div><div class="hex">#FAFAF8</div><div class="use">웜 오프화이트 · --bg</div></div></div>
+            <div class="swatch"><div class="chip" style="background:#FFFFFF;box-shadow:inset 0 0 0 1px var(--border)"></div><div class="meta"><div class="nm">서피스</div><div class="hex">#FFFFFF</div><div class="use">카드 · --surface</div></div></div>
+            <div class="swatch"><div class="chip" style="background:#E6E4DF"></div><div class="meta"><div class="nm">보더</div><div class="hex">#E6E4DF</div><div class="use">헤어라인 · --border</div></div></div>
+            <div class="swatch"><div class="chip" style="background:#1A1D1F"></div><div class="meta"><div class="nm">잉크</div><div class="hex">#1A1D1F</div><div class="use">본문 · --ink</div></div></div>
+            <div class="swatch"><div class="chip" style="background:#5B6166"></div><div class="meta"><div class="nm">보조 텍스트</div><div class="hex">#5B6166</div><div class="use">--ink-2</div></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- brand -->
+      <div class="demo">
+        <div class="demo-label"><span class="t">브랜드</span><span class="d">프라이머리 / 액센트</span></div>
+        <div class="demo-body">
+          <div class="swatch-grid">
+            <div class="swatch"><div class="chip" style="background:#0E5A63"></div><div class="meta"><div class="nm">프라이머리</div><div class="hex">#0E5A63</div><div class="use">딥 페트롤 틸 · 헤더·링크·강조</div></div></div>
+            <div class="swatch"><div class="chip" style="background:#E4EEEF"></div><div class="meta"><div class="nm">틸 틴트</div><div class="hex">#E4EEEF</div><div class="use">--primary-tint</div></div></div>
+            <div class="swatch"><div class="chip" style="background:#E08A00"></div><div class="meta"><div class="nm">액센트</div><div class="hex">#E08A00</div><div class="use">오일 앰버 · CTA·도구</div></div></div>
+            <div class="swatch"><div class="chip" style="background:#FBEFD9"></div><div class="meta"><div class="nm">앰버 틴트</div><div class="hex">#FBEFD9</div><div class="use">--accent-tint</div></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- price semantic -->
+      <div class="demo">
+        <div class="demo-label"><span class="t">가격 변동 시맨틱</span><span class="d">한국 관례 · 색만으로 정보 전달 금지</span></div>
+        <div class="demo-body">
+          <div class="token-row">
+            <div class="token"><span class="dot" style="background:#E5484D"></span><div><div class="nm">상승 ▲ +</div><div class="hex">#E5484D</div></div></div>
+            <div class="token"><span class="dot" style="background:#2F6FED"></span><div><div class="nm">하락 ▼ −</div><div class="hex">#2F6FED</div></div></div>
+            <div class="token"><span class="dot" style="background:#5B6166"></span><div><div class="nm">변동없음</div><div class="hex">#5B6166</div></div></div>
+          </div>
+          <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;padding-top:4px">
+            <span class="delta up"><span class="ico">▲</span>+18.5</span>
+            <span class="delta down"><span class="ico">▼</span>−7.2</span>
+            <span class="delta flat"><span class="ico">—</span>0.0</span>
+            <span class="kbd-note">반드시 ▲/▼ 아이콘과 +/− 부호를 색과 함께 병기 (색각 접근성)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- status -->
+      <div class="demo">
+        <div class="demo-label"><span class="t">상태색</span><span class="d">성공 / 경고 / 에러</span></div>
+        <div class="demo-body">
+          <div class="token-row">
+            <div class="token"><span class="dot" style="background:#2E9E5B"></span><div><div class="nm">성공</div><div class="hex">#2E9E5B</div></div></div>
+            <div class="token"><span class="dot" style="background:#E0A800"></span><div><div class="nm">경고</div><div class="hex">#E0A800</div></div></div>
+            <div class="token"><span class="dot" style="background:#D64545"></span><div><div class="nm">에러</div><div class="hex">#D64545</div></div></div>
+          </div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;padding-top:4px">
+            <button class="btn btn-primary">유류세 계산하기</button>
+            <button class="btn btn-teal">지역 비교</button>
+            <button class="btn btn-ghost">가이드 보기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TYPE ============ -->
+  <section class="section" id="type">
+    <div class="section-head">
+      <span class="idx">02</span>
+      <h2>타이포그래피</h2>
+      <span class="sub">Pretendard · 숫자는 고정폭(tabular)</span>
+    </div>
+    <div class="kit-grid cols-2">
+      <div class="demo">
+        <div class="demo-label"><span class="t">스케일 (모바일 기준)</span><span class="d">본문 line-height 1.7</span></div>
+        <div class="demo-body">
+          <div class="type-spec">
+            <div class="type-row"><span class="tag">Display · <b>28</b></span><span class="sample s-display">유가, 한눈에</span></div>
+            <div class="type-row"><span class="tag">H1 · <b>24</b></span><span class="sample s-h1">왜 이렇게 비쌀까</span></div>
+            <div class="type-row"><span class="tag">H2 · <b>20</b></span><span class="sample s-h2">유류세 구조 살펴보기</span></div>
+            <div class="type-row"><span class="tag">H3 · <b>17</b></span><span class="sample s-h3">셀프주유소 가격차</span></div>
+            <div class="type-row"><span class="tag">Body · <b>16</b></span><span class="sample s-body">휘발유 가격의 절반 이상은 세금으로 구성됩니다.</span></div>
+            <div class="type-row"><span class="tag">Caption · <b>13</b></span><span class="sample s-cap">출처: 한국석유공사 오피넷 · 기준일 2026.06.05</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="demo">
+        <div class="demo-label"><span class="t">가격 표기 규칙</span><span class="d">단위 작게 · 변동값 시맨틱</span></div>
+        <div class="demo-body">
+          <div class="stack">
+            <div><span class="price"><span class="num">1,712.34</span><span class="unit">원/L</span></span></div>
+            <p class="muted" style="margin:0;font-size:13px">단위(원/L)는 숫자보다 작게, 변동값은 색 + 아이콘 + 부호로.</p>
+            <div class="divider"></div>
+            <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+              <span class="price" style="font-size:24px"><span class="num">1,712</span><span class="unit">원/L</span></span>
+              <span class="delta up"><span class="ico">▲</span>+18.5<span style="font-weight:600;color:var(--ink-3);font-size:.82em">원</span></span>
+              <span class="delta-pill up"><span class="delta up"><span class="ico">▲</span>1.1%</span></span>
+            </div>
+            <p class="kbd-note" style="margin:0">고정폭 숫자로 자릿수가 흔들리지 않게 정렬됩니다 — <span class="num">1,111 / 8,888 / 1,234,567</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COMPONENTS ============ -->
+  <section class="section" id="components">
+    <div class="section-head">
+      <span class="idx">03</span>
+      <h2>핵심 컴포넌트</h2>
+      <span class="sub">11종 · 예시 렌더</span>
+    </div>
+
+    <div class="kit-grid">
+
+      <!-- 1. PRICE CARDS -->
+      <div class="demo">
+        <div class="demo-label"><span class="n">1</span><span class="t">가격 카드</span><span class="d">hover · 스파크라인 · 전일 대비</span></div>
+        <div class="demo-body tint">
+          <div class="price-cards" id="priceCards">
+            <article class="price-card">
+              <div class="fuel"><span class="fuel-dot fuel-gasoline"></span><span class="nm">휘발유</span><span class="tag">전국 평균</span></div>
+              <div class="big"><span class="price"><span class="num">1,712</span><span class="unit">원/L</span></span></div>
+              <div class="delta up"><span class="ico">▲</span>+18.5원 <span class="muted" style="font-weight:600">(어제 대비)</span></div>
+              <svg class="spark" viewBox="0 0 120 34" preserveAspectRatio="none" data-trend="up"></svg>
+              <div class="foot"><span class="asof">06.05 기준</span></div>
+            </article>
+            <article class="price-card">
+              <div class="fuel"><span class="fuel-dot fuel-diesel"></span><span class="nm">경유</span><span class="tag">전국 평균</span></div>
+              <div class="big"><span class="price"><span class="num">1,598</span><span class="unit">원/L</span></span></div>
+              <div class="delta down"><span class="ico">▼</span>−7.2원 <span class="muted" style="font-weight:600">(어제 대비)</span></div>
+              <svg class="spark" viewBox="0 0 120 34" preserveAspectRatio="none" data-trend="down"></svg>
+              <div class="foot"><span class="asof">06.05 기준</span></div>
+            </article>
+            <article class="price-card">
+              <div class="fuel"><span class="fuel-dot fuel-premium"></span><span class="nm">고급휘발유</span><span class="tag">전국 평균</span></div>
+              <div class="big"><span class="price"><span class="num">1,985</span><span class="unit">원/L</span></span></div>
+              <div class="delta flat"><span class="ico">—</span>0.0원 <span class="muted" style="font-weight:600">(어제 대비)</span></div>
+              <svg class="spark" viewBox="0 0 120 34" preserveAspectRatio="none" data-trend="flat"></svg>
+              <div class="foot"><span class="asof">06.05 기준</span></div>
+            </article>
+            <article class="price-card">
+              <div class="fuel"><span class="fuel-dot fuel-lpg"></span><span class="nm">자동차 LPG</span><span class="tag">전국 평균</span></div>
+              <div class="big"><span class="price"><span class="num">1,043</span><span class="unit">원/L</span></span></div>
+              <div class="delta down"><span class="ico">▼</span>−3.1원 <span class="muted" style="font-weight:600">(어제 대비)</span></div>
+              <svg class="spark" viewBox="0 0 120 34" preserveAspectRatio="none" data-trend="down2"></svg>
+              <div class="foot"><span class="asof">06.05 기준</span></div>
+            </article>
+          </div>
+          <div class="src-badge">
+            <svg class="v" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/></svg>
+            출처: <b>한국석유공사 오피넷</b><span class="dot"></span>data.go.kr<span class="dot"></span>기준일 2026.06.05<span class="dot"></span><span class="rel-time">⟳ 3시간 전 갱신</span><span class="dot"></span>실제가와 차이 가능
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. TAX WIDGET (HERO) -->
+      <div class="demo">
+        <div class="demo-label"><span class="n">2</span><span class="t">유류세 분해 위젯 (히어로 도구)</span><span class="d">인터랙티브 · 금액 입력 → 실시간 분해</span></div>
+        <div class="demo-body tint">
+          <div class="taxw" id="taxWidget">
+            <div class="taxw-head">
+              <div class="k">유류세 계산기</div>
+              <h3>내가 낸 기름값, 세금은 얼마였을까?</h3>
+            </div>
+            <div class="taxw-body">
+              <div class="fuel-toggle seg-toggle" id="fuelToggle" role="tablist" aria-label="유종 선택">
+                <button data-fuel="gasoline" class="on" role="tab" aria-selected="true"><span class="fuel-dot fuel-gasoline"></span>휘발유</button>
+                <button data-fuel="diesel" role="tab" aria-selected="false"><span class="fuel-dot fuel-diesel"></span>경유</button>
+              </div>
+              <div class="taxw-input">
+                <label for="taxAmt">주유 금액</label>
+                <input id="taxAmt" type="text" inputmode="numeric" value="50,000">
+                <span class="won">원</span>
+              </div>
+              <div class="chip-row" id="amtChips">
+                <button class="amt-chip" data-amt="30000">3만원</button>
+                <button class="amt-chip on" data-amt="50000">5만원</button>
+                <button class="amt-chip" data-amt="70000">7만원</button>
+                <button class="amt-chip" data-amt="100000">10만원</button>
+              </div>
+
+              <div class="stack-bar" id="stackBar">
+                <div class="stack-seg seg-base"    data-seg="base"></div>
+                <div class="stack-seg seg-traffic" data-seg="traffic"></div>
+                <div class="stack-seg seg-edu"     data-seg="edu"></div>
+                <div class="stack-seg seg-vat"     data-seg="vat"></div>
+                <div class="stack-seg seg-margin"  data-seg="margin"></div>
+              </div>
+
+              <div class="legend" id="taxLegend">
+                <div class="legend-item"><span class="sw seg-base"></span><span class="lbl">세전 정유가</span><span class="val" data-v="base">0원</span></div>
+                <div class="legend-item"><span class="sw seg-traffic"></span><span class="lbl">교통·에너지·환경세</span><span class="val" data-v="traffic">0원</span></div>
+                <div class="legend-item"><span class="sw seg-edu"></span><span class="lbl">교육세 · 주행세</span><span class="val" data-v="edu">0원</span></div>
+                <div class="legend-item"><span class="sw seg-vat"></span><span class="lbl">부가가치세 10%</span><span class="val" data-v="vat">0원</span></div>
+                <div class="legend-item"><span class="sw seg-margin"></span><span class="lbl">유통 마진</span><span class="val" data-v="margin">0원</span></div>
+              </div>
+
+              <div class="tax-result">
+                <div class="line">당신이 낸 <b class="hl" data-r="total">50,000원</b> 중<br>세금은 <b class="hl" data-r="tax">22,900원</b> <span class="pct">(<span data-r="pct">45.8</span>%)</span> 입니다.</div>
+              </div>
+              <p class="kbd-note" id="taxNote" style="margin:10px 0 0">※ 휘발유 기준 단순 추정. 교통세 정액(리터당)·세율은 시점에 따라 달라질 수 있습니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. TREND CHART -->
+      <div class="demo">
+        <div class="demo-label"><span class="n">3</span><span class="t">가격 추세 차트</span><span class="d">기간 토글 · 상승·하락 구간 시맨틱</span></div>
+        <div class="demo-body tint">
+          <div class="chart-card">
+            <div class="chart-top">
+              <h3>전국 휘발유 평균</h3>
+              <div class="seg-toggle" id="chartToggle">
+                <button data-range="1w" class="on">1주</button>
+                <button data-range="1m">1개월</button>
+              </div>
+            </div>
+            <div class="chart-wrap"><svg id="trendChart" viewBox="0 0 600 220" preserveAspectRatio="none"></svg></div>
+            <div class="chart-foot">
+              <span><span class="delta up"><span class="ico">▲</span></span> 상승 구간</span>
+              <span><span class="delta down"><span class="ico">▼</span></span> 하락 구간</span>
+              <span style="margin-left:auto" id="chartRangeLabel">최근 7일 · 단위 원/L</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. REGION COMPARE -->
+      <div class="demo">
+        <div class="demo-label"><span class="n">4</span><span class="t">지역 비교 바 · 테이블</span><span class="d">전국 평균 기준선</span></div>
+        <div class="demo-body">
+          <div class="cmp-bars">
+            <div class="cmp-bar-row">
+              <span class="rg">서울</span>
+              <div class="cmp-track"><div class="cmp-fill" style="width:92%"></div><div class="cmp-avg-line" style="left:78%"><span class="cmp-avg-flag">전국 평균</span></div></div>
+              <span class="cmp-val">1,802<span class="unit" style="font-size:.7em;color:var(--ink-3)">원</span></span>
+            </div>
+            <div class="cmp-bar-row">
+              <span class="rg">부산</span>
+              <div class="cmp-track"><div class="cmp-fill" style="width:80%"></div><div class="cmp-avg-line" style="left:78%"></div></div>
+              <span class="cmp-val">1,724<span class="unit" style="font-size:.7em;color:var(--ink-3)">원</span></span>
+            </div>
+            <div class="cmp-bar-row">
+              <span class="rg">대구</span>
+              <div class="cmp-track"><div class="cmp-fill" style="width:71%"></div><div class="cmp-avg-line" style="left:78%"></div></div>
+              <span class="cmp-val">1,668<span class="unit" style="font-size:.7em;color:var(--ink-3)">원</span></span>
+            </div>
+          </div>
+          <table class="cmp-table">
+            <thead><tr><th>지역</th><th class="r">휘발유</th><th class="r">경유</th><th class="r">전일 대비</th></tr></thead>
+            <tbody>
+              <tr><td class="region">서울</td><td class="r">1,802</td><td class="r">1,689</td><td class="r"><span class="delta up"><span class="ico">▲</span>+12</span></td></tr>
+              <tr><td class="region">부산</td><td class="r">1,724</td><td class="r">1,601</td><td class="r"><span class="delta down"><span class="ico">▼</span>−5</span></td></tr>
+              <tr><td class="region">대구</td><td class="r">1,668</td><td class="r">1,572</td><td class="r"><span class="delta flat"><span class="ico">—</span>0</span></td></tr>
+              <tr><td class="region" style="color:var(--accent-700);font-weight:800">전국</td><td class="r" style="font-weight:800">1,712</td><td class="r" style="font-weight:800">1,598</td><td class="r"><span class="delta up"><span class="ico">▲</span>+3</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 5. CONDITIONAL BANNER -->
+      <div class="demo">
+        <div class="demo-label"><span class="n">5</span><span class="t">조건부 섹션 배너</span><span class="d">사실 진술만 · 평가어 금지</span></div>
+        <div class="demo-body">
+          <div class="fact-banner hi">
+            <div class="fb-ico">▲</div>
+            <div>
+              <div class="fb-main">서울은 전국 평균 대비 <b>+90원</b> 높습니다 <span class="muted" style="font-weight:600;font-size:.85em">(상위 6%)</span></div>
+              <div class="fb-sub">기준일 2026.06.05 · 휘발유 평균가 비교</div>
+            </div>
+          </div>
+          <div class="fact-banner lo">
+            <div class="fb-ico">▼</div>
+            <div>
+              <div class="fb-main">대구는 전국 평균 대비 <b>−44원</b> 낮습니다 <span class="muted" style="font-weight:600;font-size:.85em">(하위 18%)</span></div>
+              <div class="fb-sub">기준일 2026.06.05 · 휘발유 평균가 비교</div>
+            </div>
+          </div>
+          <p class="kbd-note" style="margin:0">“비싸다 / 바가지” 같은 평가어 대신 <b>+○○원 / 상위 ○○%</b> 사실만 진술.</p>
+        </div>
+      </div>
+
+      <!-- 6. PERSONA -->
+      <div class="demo">
+        <div class="demo-label"><span class="n">6</span><span class="t">페르소나 코멘터리 박스</span><span class="d">친근한 톤 · AI 보조 고지</span></div>
+        <div class="demo-body">
+          <div class="persona">
+            <div class="persona-head">
+              <div class="persona-av">🚗</div>
+              <div><div class="who">주말 운전자 민수</div><div class="role">출퇴근 왕복 60km</div></div>
+            </div>
+            <div class="persona-quote">세금이 절반이라니… 그래도 셀프주유소만 잘 골라도 한 달에 2~3만원은 아끼겠더라고요.</div>
+            <div class="persona-note">ⓘ 일부 콘텐츠는 AI 작성 보조를 사용했습니다.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7. SOURCE BADGE -->
+      <div class="demo">
+        <div class="demo-label"><span class="n">7</span><span class="t">출처 · 면책 배지</span><span class="d">가격 표기 바로 옆에 노출</span></div>
+        <div class="demo-body">
+          <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+            <span class="price" style="font-size:26px"><span class="num">1,712</span><span class="unit">원/L</span></span>
+            <span class="delta up"><span class="ico">▲</span>+18.5</span>
+          </div>
+          <div class="src-badge">
+            <svg class="v" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/></svg>
+            출처: <b>한국석유공사 오피넷</b><span class="dot"></span>data.go.kr<span class="dot"></span>기준일 2026.06.05<span class="dot"></span><span class="rel-time">⟳ 3시간 전 갱신</span><span class="dot"></span>실제가와 차이 가능
+          </div>
+          <p class="kbd-note" style="margin:0">푸터가 아니라 <b>데이터 인접</b> 위치에 두어 신뢰를 즉시 전달.</p>
+        </div>
+      </div>
+
+      <!-- 8. FAQ -->
+      <div class="demo">
+        <div class="demo-label"><span class="n">8</span><span class="t">FAQ 아코디언</span><span class="d">한 문장 답형 · AI 인용 최적화</span></div>
+        <div class="demo-body">
+          <div class="faq" id="faq">
+            <div class="faq-item open">
+              <button class="faq-q"><span class="qmark">Q</span>휘발유 값의 세금 비중은 얼마인가요?<span class="caret">⌄</span></button>
+              <div class="faq-a"><div class="faq-a-inner">휘발유 소비자가격의 약 45~50%가 세금(교통·에너지·환경세, 교육세, 주행세, 부가세)으로 구성됩니다.</div></div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q"><span class="qmark">Q</span>유류세 인하는 언제 적용되나요?<span class="caret">⌄</span></button>
+              <div class="faq-a"><div class="faq-a-inner">정부 고시 시행일부터 적용되며, 주유소 재고 소진 시차로 실제 가격 반영까지 1~2주가 걸릴 수 있습니다.</div></div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q"><span class="qmark">Q</span>셀프주유소는 왜 더 저렴한가요?<span class="caret">⌄</span></button>
+              <div class="faq-a"><div class="faq-a-inner">인건비 절감분이 가격에 반영되어 일반 주유소보다 리터당 30~80원가량 낮은 경우가 많습니다.</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9. INTERNAL LINK CARDS -->
+      <div class="demo">
+        <div class="demo-label"><span class="n">9</span><span class="t">내부 링크 카드</span><span class="d">허브 → 스포크 클러스터</span></div>
+        <div class="demo-body tint">
+          <div class="cluster-head">
+            <span class="cluster-badge">허브</span>
+            <span class="cluster-title">서울 유가 지도</span>
+            <span class="cluster-meta">관련 문서 3</span>
+          </div>
+          <div class="link-grid">
+            <a class="link-card" href="#">
+              <span class="kicker">지역</span><span class="lc-t">서울 유가 지도</span>
+              <span class="lc-d">25개 구별 평균가와 최저가 주유소</span>
+              <span class="lc-go">바로가기 →</span>
+            </a>
+            <a class="link-card" href="#">
+              <span class="kicker">가이드</span><span class="lc-t">유류세 완전정복</span>
+              <span class="lc-d">세목별 구조와 인하 정책 한 번에</span>
+              <span class="lc-go">바로가기 →</span>
+            </a>
+            <a class="link-card" href="#">
+              <span class="kicker">에버그린</span><span class="lc-t">기름값 아끼는 7가지</span>
+              <span class="lc-d">셀프·앱 할인·경제속도까지</span>
+              <span class="lc-go">바로가기 →</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10. AD SLOTS -->
+      <div class="demo">
+        <div class="demo-label"><span class="n">10</span><span class="t">애드센스 슬롯 플레이스홀더</span><span class="d">광고 라벨 · 분리선으로 콘텐츠와 구분</span></div>
+        <div class="demo-body">
+          <div class="ad-slot ad-leaderboard"><span class="ad-label">광고 · AD</span><span class="ad-size">상단 리더보드 · 728×90 / 반응형</span></div>
+          <div class="ad-slot ad-inline"><span class="ad-label">광고 · AD</span><span class="ad-size">본문 중간 인피드 · 300×250</span></div>
+          <div class="ad-slot ad-anchor"><span class="ad-label">광고 · AD</span><span class="ad-size">하단 앵커 · 320×50</span></div>
+          <p class="kbd-note" style="margin:0">콘텐츠와 시각적으로 명확히 구분: 점선 테두리 · “광고” 라벨 · 충분한 여백.</p>
+        </div>
+      </div>
+
+      <!-- 11. BREADCRUMB + HUB + HEADER/FOOTER -->
+      <div class="demo">
+        <div class="demo-label"><span class="n">11</span><span class="t">브레드크럼 · 허브 그리드 · 헤더/푸터</span><span class="d">출처·AI·가공물 고지 포함</span></div>
+        <div class="demo-body tint">
+          <div class="site-header" style="border-radius:var(--r-md);border:1px solid var(--border)">
+            <div class="brand"><span class="brand-mark">유</span>유가지도</div>
+            <nav class="site-nav"><a href="#">유가</a><a href="#">유류세</a><a href="#">지역</a><a href="#">가이드</a></nav>
+            <button class="btn btn-primary btn-sm header-cta">유류세 계산</button>
+          </div>
+
+          <nav class="crumb"><a href="#">홈</a><span class="sep">›</span><a href="#">지역</a><span class="sep">›</span><a href="#">서울</a><span class="sep">›</span><span class="cur">강남구</span></nav>
+
+          <div class="hub-grid">
+            <a class="hub-tile" href="#"><span class="hi">⛽</span><span class="ht">전국 유가</span><span class="hc">실시간 평균</span></a>
+            <a class="hub-tile" href="#"><span class="hi">🧾</span><span class="ht">유류세</span><span class="hc">구조·계산</span></a>
+            <a class="hub-tile" href="#"><span class="hi">📍</span><span class="ht">지역 비교</span><span class="hc">시·도별</span></a>
+            <a class="hub-tile" href="#"><span class="hi">📈</span><span class="ht">추세</span><span class="hc">기간별 차트</span></a>
+            <a class="hub-tile" href="#"><span class="hi">📚</span><span class="ht">가이드</span><span class="hc">에버그린</span></a>
+            <a class="hub-tile" href="#"><span class="hi">❓</span><span class="ht">FAQ</span><span class="hc">자주 묻는</span></a>
+          </div>
+
+          <div class="site-footer" style="border-radius:var(--r-md);border:1px solid var(--border)">
+            <div class="footer-links"><a href="#">서비스 소개</a><a href="#">개인정보처리방침</a><a href="#">문의</a></div>
+            <p class="footer-disc"><b>데이터 출처:</b> 한국석유공사 오피넷, 공공데이터포털(data.go.kr). 표시 가격은 기준일 평균이며 실제 주유소 가격과 차이가 있을 수 있습니다. <b>일부 콘텐츠는 AI 작성 보조</b>를 사용했으며, 통계·차트는 원천 데이터를 가공한 결과물입니다. 본 사이트는 투자·소비 권유가 아닌 정보 제공을 목적으로 합니다.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ COMPOSED SCREENS ============ -->
+  <section class="section" id="screens">
+    <div class="section-head">
+      <span class="idx">04</span>
+      <h2>조합 예시 — 두 폭</h2>
+      <span class="sub">모바일 360 · 데스크톱 1280</span>
+    </div>
+    <div class="frames">
+      <!-- MOBILE -->
+      <div>
+        <div class="frame-cap">모바일 <span class="px">· 360px</span></div>
+        <div class="device" id="mobileScene"></div>
+      </div>
+      <!-- DESKTOP -->
+      <div>
+        <div class="frame-cap">데스크톱 <span class="px">· 1280px (축소 표시)</span></div>
+        <div class="viewport" id="desktopScene"></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Tweaks panel mounts here -->
+<div id="tweaksRoot"></div>
+
+<script src="app.js"></script>
+<script src="scenes.js"></script>
+<script src="tweaks.js"></script>
+</body>
+</html>
