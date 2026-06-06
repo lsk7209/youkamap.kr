@@ -218,15 +218,31 @@ function prettyDate(d) {
   return d.replaceAll('-', '.');
 }
 
+function toneFor(post) {
+  return {
+    tax: { label: '정책 변수', note: '발표일과 실제 주유소 가격 반영일은 다를 수 있습니다.', className: 'tone-amber' },
+    tip: { label: '절약 판단', note: '리터당 가격보다 이동 거리와 대기 시간을 함께 계산해야 합니다.', className: 'tone-green' },
+    region: { label: '지역 비교', note: '평균가는 방향을 잡는 기준이며 실제 결제가는 주유소별로 달라집니다.', className: 'tone-blue' },
+    news: { label: '뉴스 해석', note: '하루 가격보다 몇 주간의 흐름과 기준 지역을 함께 확인하세요.', className: 'tone-teal' },
+    ever: { label: '장기 판단', note: '연료비만 보지 말고 차량가, 정비, 동선까지 총비용으로 봐야 합니다.', className: 'tone-slate' }
+  }[post.cat] || { label: '확인 기준', note: '기준일과 출처를 함께 확인한 뒤 실제 결제 조건을 보세요.', className: 'tone-teal' };
+}
+
 function articleHtml(post, allPosts) {
   const related = allPosts.filter(p => p.slug !== post.slug).slice(0, 3);
   const prev = allPosts[allPosts.findIndex(p => p.slug === post.slug) + 1];
   const next = allPosts[allPosts.findIndex(p => p.slug === post.slug) - 1];
+  const tone = toneFor(post);
   const toc = post.sections.map(([h], i) => `<li><a href="#s${i + 1}">${esc(h)}</a></li>`).join('\n            ');
   const sections = post.sections.map(([h, body], i) => `
-        <h2 id="s${i + 1}">${esc(h)}</h2>
-        <p>${esc(body)}</p>`).join('\n');
-  const rows = post.table.map(r => `<tr>${r.map(c => `<td>${esc(c)}</td>`).join('')}</tr>`).join('\n              ');
+        <section class="section-block ${i % 2 === 0 ? 'tone-teal' : 'tone-blue'}">
+          <div class="section-kicker">핵심 ${i + 1}</div>
+          <h2 id="s${i + 1}">${esc(h)}</h2>
+          <p>${esc(body)}</p>
+        </section>
+        ${i === 0 ? `<div class="callout ${tone.className}"><div class="ci">!</div><div class="ct"><b>${esc(tone.label)}</b><span>${esc(tone.note)}</span></div></div>` : ''}
+        ${i === 1 ? `<div class="mini-math"><div><b>40L 기준</b><span>리터당 30원 차이 = 1,200원</span></div><div><b>월 2회</b><span>리터당 80원 차이 = 6,400원</span></div></div>` : ''}`).join('\n');
+  const rows = post.table.map((r, i) => `<tr>${r.map(c => i === 0 ? `<th>${esc(c)}</th>` : `<td>${esc(c)}</td>`).join('')}</tr>`).join('\n              ');
   const faq = post.faq.map(([q, a], i) => `
           <div class="faq-item${i === 0 ? ' open' : ''}">
             <button class="faq-q"><span class="qmark">Q</span>${esc(q)}<span class="caret">⌄</span></button>
@@ -346,6 +362,12 @@ ${adsense}
           <div class="k">3줄 요약</div>
           <ul>${post.summary.map(s => `<li>${esc(s)}</li>`).join('')}</ul>
         </div>
+
+        <div class="read-map" aria-label="이 글을 읽는 순서">
+          <a href="#calc"><b>계산</b><span>내 주유량으로 환산</span></a>
+          <a href="#checklist"><b>확인</b><span>주유 전 체크</span></a>
+          <a href="#source"><b>출처</b><span>오피넷·공공자료</span></a>
+        </div>
 ${sections}
         <figure class="figure">
           <table class="art-table">
@@ -357,17 +379,27 @@ ${sections}
         </figure>
 
         <h2 id="calc">내 주유비로 바꿔 계산하기</h2>
-        <p>${esc(post.title)}을 읽을 때 가장 중요한 기준은 리터당 가격을 실제 결제액으로 바꾸는 것입니다. 리터당 30원 차이는 작아 보이지만 40리터를 넣으면 1,200원이고, 한 달에 두 번 넣으면 2,400원입니다. 리터당 80원 차이는 40리터 기준 3,200원, 월 2회 기준 6,400원입니다. 여기에 이동 거리, 대기 시간, 카드 할인, 세차나 포인트 혜택을 더하면 실제 판단은 달라집니다. 그래서 유가지도는 가격 차이를 말할 때 항상 주유량과 동선을 함께 보라고 안내합니다.</p>
-        <p>운전자가 바로 써먹을 수 있는 계산 순서는 단순합니다. 먼저 오늘 넣을 예상 리터 수를 정합니다. 다음으로 후보 주유소 두 곳의 리터당 가격 차이를 확인합니다. 마지막으로 차이 금액에서 우회 비용을 뺍니다. 우회 비용은 정확히 계산하기 어렵지만, 왕복 거리가 늘어나고 시간이 오래 걸린다면 절감액을 보수적으로 봐야 합니다. 이 과정을 거치면 단순히 싼 주유소가 아니라 내 상황에서 이득인 주유소를 고를 수 있습니다.</p>
+        <div class="calc-card">
+          <div class="calc-head">
+            <span>계산 예시</span>
+            <strong>가격 차이 × 주유량 × 횟수</strong>
+          </div>
+          <div class="calc-grid">
+            <div><b>30원</b><span>40L 1회 = 1,200원</span></div>
+            <div><b>50원</b><span>40L 1회 = 2,000원</span></div>
+            <div><b>80원</b><span>월 2회 = 6,400원</span></div>
+          </div>
+          <p>${esc(post.title)}을 읽을 때 가장 중요한 기준은 리터당 가격을 실제 결제액으로 바꾸는 것입니다. 여기에 이동 거리, 대기 시간, 카드 할인, 세차나 포인트 혜택을 더하면 실제 판단은 달라집니다. 그래서 유가지도는 가격 차이를 말할 때 항상 주유량과 동선을 함께 보라고 안내합니다.</p>
+          <p>운전자가 바로 써먹을 수 있는 계산 순서는 단순합니다. 먼저 오늘 넣을 예상 리터 수를 정합니다. 다음으로 후보 주유소 두 곳의 리터당 가격 차이를 확인합니다. 마지막으로 차이 금액에서 우회 비용을 뺍니다. 이 과정을 거치면 단순히 싼 주유소가 아니라 내 상황에서 이득인 주유소를 고를 수 있습니다.</p>
+        </div>
 
         <h2 id="checklist">주유 전 체크리스트</h2>
-        <ul>
-          <li>가격을 볼 때는 기준일과 기준 지역을 함께 확인합니다. 어제 평균가와 오늘 개별 주유소 가격은 다를 수 있습니다.</li>
-          <li>오피넷 공개 가격, 현장 가격표, 카드 청구 할인은 서로 다른 기준일 수 있으므로 최종 결제 조건을 확인합니다.</li>
-          <li>셀프, 알뜰, 직영, 일반 주유소를 같은 선에서 비교하지 말고 운영 방식과 동선을 같이 봅니다.</li>
-          <li>장거리 운전 전에는 출발지 주변 가격과 목적지 주변 가격을 모두 확인해 불필요한 고속도로 주유를 줄입니다.</li>
-          <li>정책성 이슈는 발표일, 시행일, 실제 반영일을 분리해서 봅니다. 발표됐다는 사실과 내 동네 가격표가 바뀌는 시점은 다를 수 있습니다.</li>
-        </ul>
+        <div class="check-grid">
+          <div><b>기준일</b><span>어제 평균가와 오늘 개별 주유소 가격은 다를 수 있습니다.</span></div>
+          <div><b>결제 조건</b><span>오피넷 공개 가격, 현장 가격표, 카드 청구 할인을 분리해서 봅니다.</span></div>
+          <div><b>주유소 유형</b><span>셀프, 알뜰, 직영, 일반 주유소는 운영 방식과 동선이 다릅니다.</span></div>
+          <div><b>이동 경로</b><span>출발지와 목적지 주변 가격을 함께 확인해 불필요한 우회를 줄입니다.</span></div>
+        </div>
 
         <h2 id="mistakes">자주 생기는 오해</h2>
         <p>첫 번째 오해는 가격이 높은 지역이나 주유소를 곧바로 나쁘다고 판단하는 것입니다. 유가는 입지, 임대료, 물류, 브랜드 정책, 재고 시점, 경쟁 밀도에 따라 달라집니다. 유가지도는 특정 지역이나 사업자를 평가하지 않고 평균 대비 차이, 리터당 차이, 1회 주유액 차이처럼 검증 가능한 표현을 사용합니다. 독자도 가격 정보를 볼 때 감정적인 표현보다 숫자와 기준을 우선하는 것이 좋습니다.</p>
@@ -381,6 +413,18 @@ ${sections}
         <h2 id="source">출처와 확인 방법</h2>
         <p>가격과 정책은 시점에 따라 달라질 수 있습니다. 이 글은 운전자가 판단 순서를 잡도록 돕는 해설이며, 실제 주유 전에는 <a class="inline" href="https://www.opinet.co.kr/" rel="noopener" target="_blank">한국석유공사 오피넷</a>, <a class="inline" href="https://www.data.go.kr/" rel="noopener" target="_blank">공공데이터포털</a>, 관련 정부 고시를 함께 확인하는 것이 좋습니다.</p>
         <p>관련 글로는 <a class="inline" href="/blog/fuel-tax-cut-extension/">유류세 인하 연장 해설</a>, <a class="inline" href="/blog/international-oil-to-domestic-price/">국제유가에서 국내 가격까지의 반영 시차</a>, <a class="inline" href="/blog/cheap-gas-station-vs-regular-annual-savings/">알뜰주유소 연간 절감액 계산</a>을 함께 볼 수 있습니다.</p>
+
+        <div class="article-cta">
+          <div>
+            <b>다음 판단이 필요하다면</b>
+            <span>정책 변화, 지역 평균, 절약 계산 글을 이어서 보면 주유비 판단이 더 쉬워집니다.</span>
+          </div>
+          <div class="cta-links">
+            <a href="/blog/fuel-tax-cut-extension/">유류세 보기</a>
+            <a href="/blog/seoul-district-gasoline-price-map/">지역 가격 보기</a>
+            <a href="/blog/cheap-gas-station-vs-regular-annual-savings/">절약 계산 보기</a>
+          </div>
+        </div>
 
         <h2 id="faq">자주 묻는 질문</h2>
         <div class="faq" id="faq">${faq}
@@ -414,6 +458,11 @@ ${sections}
             <li><a href="#faq">자주 묻는 질문</a></li>
           </ol>
         </nav>
+        <div class="side-note ${tone.className}">
+          <div class="k">${esc(tone.label)}</div>
+          <p>${esc(tone.note)}</p>
+          <a href="#calc">계산 예시로 이동</a>
+        </div>
       </aside>
     </div>
   </article>
