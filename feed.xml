@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>유가지도 블로그</title>
+    <link>https://youkamap.kr/blog/</link>
+    <description>유류세 구조, 유가 뉴스, 지역별 가격차, 절약 팁을 오피넷 데이터 기반으로 정리합니다.</description>
+    <language>ko-KR</language>
+    <lastBuildDate>Sat, 06 Jun 2026 00:00:00 +0900</lastBuildDate>
+    <atom:link href="https://youkamap.kr/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>유류세 인하 연장, 7월부터 무엇이 어떻게 바뀌나</title>
+      <link>https://youkamap.kr/blog/fuel-tax-cut-extension/</link>
+      <guid isPermaLink="true">https://youkamap.kr/blog/fuel-tax-cut-extension/</guid>
+      <pubDate>Fri, 05 Jun 2026 09:00:00 +0900</pubDate>
+      <description>유류세 인하 연장으로 7월부터 무엇이 바뀌는지, 적용 시점과 주유소 가격 반영 시차를 정리합니다.</description>
+    </item>
+  </channel>
+</rss>

@@ -12,7 +12,7 @@
 /* hero */
 .art-hero { padding: 26px 0 22px; border-bottom: 1px solid var(--border); }
 .art-hero .chip-cat { margin-bottom: 14px; }
-.art-hero h1 { font-size: clamp(28px, 4.6vw, 42px); line-height: 1.18; letter-spacing: -.022em; font-weight: 800; margin: 0 0 16px; max-width: 20ch; overflow-wrap: anywhere; }
+.art-hero h1 { font-size: clamp(28px, 4.6vw, 42px); line-height: 1.18; letter-spacing: -.022em; font-weight: 800; margin: 0 0 16px; max-width: 20ch; overflow-wrap: anywhere; white-space: normal; }
 .art-hero .dek { font-size: 18px; color: var(--ink-2); line-height: 1.6; max-width: 60ch; margin: 0 0 18px; overflow-wrap: anywhere; }
 .art-byline { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
 .art-byline .av { width: 40px; height: 40px; border-radius: 50%; background: var(--primary-tint); display: grid; place-items: center; font-size: 18px; flex: none; }
@@ -112,7 +112,13 @@
   .article-wrap { padding-inline: 20px; }
   .article-wrap .header-cta,
   .blog-shell .header-cta { max-width: 54px; }
-  .art-hero h1 { font-size: 30px; line-height: 1.16; max-width: 100%; }
+  .art-hero h1 { inline-size: 100%; max-inline-size: min(100%, 350px); font-size: 30px; line-height: 1.16; max-width: 100%; }
+  .art-hero,
+  .prose,
+  .prose > *,
+  .related,
+  .related .post-card,
+  .related h3 { max-inline-size: min(100%, 350px); }
   .art-hero .dek { font-size: 16px; }
   .art-hero h1,
   .art-hero .dek,
