@@ -1,0 +1,43 @@
+name: Publish scheduled blog post
+
+on:
+  schedule:
+    - cron: "7 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Publish next scheduled post
+        run: node scripts/publish-next-scheduled.js
+
+      - name: Commit generated site
+        run: |
+          if git diff --quiet; then
+            echo "No scheduled post was due."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/articles.json content/publish-state.json blog sitemap.xml feed.xml llms.txt
+          git commit -m "Publish scheduled fuel guide" \
+            -m "Constraint: 5-hour cadence for one scheduled article per run" \
+            -m "Confidence: high" \
+            -m "Scope-risk: narrow" \
+            -m "Directive: Keep scheduled posts out of public HTML until the scheduler flips status" \
+            -m "Tested: node scripts/publish-next-scheduled.js and static blog rebuild in workflow"
+          git push

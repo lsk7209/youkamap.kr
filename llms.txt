@@ -1,24 +1,16 @@
 # 유가지도
 
-유가지도는 한국 운전자를 위해 유류세, 주유비, 지역별 유가 차이, 주유 절약 판단법을 설명하는 정보 사이트입니다.
+유가지도는 주유소 가격, 유류세, 지역별 유가, 차량 유지비를 운전자 관점에서 설명하는 한국어 사이트입니다.
 
-## Canonical URLs
-
-- https://youkamap.kr/
-- https://youkamap.kr/blog/
-- https://youkamap.kr/blog/fuel-tax-cut-extension/
-- https://youkamap.kr/blog/self-service-gas-station-price-gap/
-- https://youkamap.kr/blog/seoul-district-gasoline-price-map/
-- https://youkamap.kr/blog/diesel-cheaper-than-gasoline/
-- https://youkamap.kr/blog/july-fuel-price-outlook/
-- https://youkamap.kr/blog/highway-gas-station-price/
-- https://youkamap.kr/blog/lpg-car-total-cost/
-- https://youkamap.kr/blog/international-oil-to-domestic-price/
-- https://youkamap.kr/blog/regional-fuel-price-comparison-june/
-- https://youkamap.kr/blog/cheap-gas-station-vs-regular-annual-savings/
-- https://youkamap.kr/privacy/
-- https://youkamap.kr/contact/
-
-## Source Policy
-
-가격과 정책 설명은 한국석유공사 오피넷, 공공데이터포털, 정부 고시 등 공개 자료를 우선합니다. 실제 주유소 가격과 차이가 있을 수 있으므로 기준일과 출처를 함께 확인해야 합니다.
+## 공개 글
+- 주유소 가격표 보는 법, 리터당 차이를 실제 주유비로 바꾸기: https://youkamap.kr/blog/gas-station-price-board-reading/
+- 유류세 인하 연장되면 기름값은 얼마나 달라질까: https://youkamap.kr/blog/fuel-tax-cut-extension/
+- 셀프주유소가 30~80원 싼 진짜 이유: https://youkamap.kr/blog/self-service-gas-station-cheaper/
+- 서울 25개 구 휘발유 가격 지도: https://youkamap.kr/blog/seoul-district-gasoline-map/
+- 경유가 휘발유보다 싸진 날, 무슨 일이 있었나: https://youkamap.kr/blog/diesel-cheaper-than-gasoline/
+- 유가 추세로 보는 7월 기름값 전망: https://youkamap.kr/blog/oil-price-trend-july/
+- 고속도로 주유소는 왜 더 비쌀까: https://youkamap.kr/blog/highway-gas-station-expensive/
+- LPG 차량, 지금 갈아탈 만할까: https://youkamap.kr/blog/lpg-car-total-cost/
+- 국제유가가 오르면 주유소 가격은 언제 오를까: https://youkamap.kr/blog/international-oil-to-local-price/
+- 지역별 기름값 차이는 왜 계속 벌어질까: https://youkamap.kr/blog/regional-fuel-price-gap/
+- 알뜰주유소와 일반 주유소, 어디가 더 유리할까: https://youkamap.kr/blog/budget-gas-station-vs-normal/
