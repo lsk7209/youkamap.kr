@@ -358,6 +358,9 @@ a { color: var(--primary); text-decoration: none; }
 .site-nav a { font-size: var(--fs-sm); font-weight: 600; color: var(--ink-2); white-space: nowrap; }
 .site-nav a:hover { color: var(--primary); }
 .header-cta { margin-left: auto; }
+@media (max-width: 560px) {
+  .header-cta { display: none; }
+}
 
 .site-footer { background: var(--surface-2); border-top: 1px solid var(--border); padding: 22px 16px; }
 .footer-disc { font-size: 11.5px; color: var(--ink-3); line-height: 1.6; max-width: 70ch; }

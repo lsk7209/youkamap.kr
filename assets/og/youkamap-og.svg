@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">유가지도</title>
+  <desc id="desc">유가 구조와 유류세를 설명하는 유가지도 공유 이미지</desc>
+  <rect width="1200" height="630" fill="#F8F7F2"/>
+  <rect x="64" y="64" width="1072" height="502" rx="36" fill="#FFFFFF" stroke="#DDD8CC" stroke-width="2"/>
+  <circle cx="150" cy="150" r="42" fill="#0E6B73"/>
+  <text x="150" y="166" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" font-weight="800" fill="#FFFFFF">유</text>
+  <text x="220" y="158" font-family="Arial, sans-serif" font-size="42" font-weight="800" fill="#0E5A63">유가지도</text>
+  <text x="96" y="285" font-family="Arial, sans-serif" font-size="68" font-weight="800" fill="#14181B">유가 구조와 유류세를</text>
+  <text x="96" y="365" font-family="Arial, sans-serif" font-size="68" font-weight="800" fill="#14181B">운전자 관점에서 설명합니다</text>
+  <text x="100" y="454" font-family="Arial, sans-serif" font-size="28" fill="#48515A">오피넷 · 공공데이터포털 · 정부 고시 기반 유가 해설</text>
+  <rect x="96" y="498" width="222" height="46" rx="23" fill="#E8F4F3"/>
+  <text x="207" y="529" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#0E5A63">youkamap.kr</text>
+  <path d="M850 170h88v250h-88z" fill="#E58D00" opacity=".14"/>
+  <path d="M892 140c35 0 64 28 64 63v270h-128V203c0-35 29-63 64-63z" fill="#0E6B73"/>
+  <path d="M855 225h72v76h-72z" fill="#FFFFFF" opacity=".9"/>
+  <path d="M956 275h34c25 0 45 20 45 45v84c0 24-19 43-43 43h-20" fill="none" stroke="#0E6B73" stroke-width="24" stroke-linecap="round"/>
+  <circle cx="892" cy="444" r="24" fill="#E58D00"/>
+</svg>

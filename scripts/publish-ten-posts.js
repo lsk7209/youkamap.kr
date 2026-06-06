@@ -5,6 +5,7 @@ const root = path.resolve(__dirname, '..');
 const site = 'https://youkamap.kr';
 const today = '2026-06-06';
 const adsense = '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3050601904412736" crossorigin="anonymous"></script>';
+const ogImage = `${site}/assets/og/youkamap-og.svg`;
 
 const posts = [
   {
@@ -273,9 +274,11 @@ function articleHtml(post, allPosts) {
 <meta property="og:title" content="${esc(post.title)} — 유가지도">
 <meta property="og:description" content="${esc(post.description)}">
 <meta property="og:url" content="${site}/blog/${post.slug}/">
+<meta property="og:image" content="${ogImage}">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="${esc(post.title)} — 유가지도">
 <meta name="twitter:description" content="${esc(post.description)}">
+<meta name="twitter:image" content="${ogImage}">
 <link rel="alternate" type="application/rss+xml" title="유가지도 블로그" href="/feed.xml">
 <link rel="stylesheet" href="/styles/tokens.css">
 <link rel="stylesheet" href="/styles/components.css">
@@ -475,9 +478,11 @@ function blogIndex() {
 <meta property="og:title" content="유가지도 — 블로그">
 <meta property="og:description" content="유류세 구조, 유가뉴스, 지역별 가격차, 절약 팁을 오피넷 데이터 기반으로 읽습니다.">
 <meta property="og:url" content="${site}/blog/">
+<meta property="og:image" content="${ogImage}">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="유가지도 — 블로그">
 <meta name="twitter:description" content="유류세 구조, 유가뉴스, 지역별 가격차, 절약 팁을 오피넷 데이터 기반으로 읽습니다.">
+<meta name="twitter:image" content="${ogImage}">
 <link rel="alternate" type="application/rss+xml" title="유가지도 블로그" href="/feed.xml">
 <link rel="stylesheet" href="/styles/tokens.css">
 <link rel="stylesheet" href="/styles/components.css">
