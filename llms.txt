@@ -9,6 +9,8 @@
 - 대표 글: https://youkamap.kr/blog/fuel-tax-cut-extension/
 - 사이트맵: https://youkamap.kr/sitemap.xml
 - RSS 피드: https://youkamap.kr/feed.xml
+- 개인정보처리방침: https://youkamap.kr/privacy/
+- 문의: https://youkamap.kr/contact/
 
 ## 콘텐츠 원칙
 
