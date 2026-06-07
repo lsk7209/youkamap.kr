@@ -3,6 +3,7 @@
 유가지도는 주유소 가격, 유류세, 지역별 유가, 차량 유지비를 운전자 관점에서 설명하는 한국어 사이트입니다.
 
 ## 공개 글
+- 전국 평균 기름값을 내 주유 판단에 쓰는 법: https://youkamap.kr/blog/national-average-fuel-price/
 - 앱 가격과 현장 가격이 다를 때 먼저 확인할 것: https://youkamap.kr/blog/app-price-vs-station-price/
 - 40리터 주유비 계산, 작은 가격 차이가 커지는 순간: https://youkamap.kr/blog/forty-liter-fuel-cost/
 - 휘발유 10원 차이, 그냥 지나쳐도 되는 금액일까: https://youkamap.kr/blog/gasoline-ten-won-gap/
