@@ -294,8 +294,8 @@
   },
   {
     "slug": "app-price-vs-station-price",
-    "status": "scheduled",
-    "publishedAt": "2026-06-07T06:00:00.000Z",
+    "status": "published",
+    "publishedAt": "2026-06-07T12:00:56.013Z",
     "date": "06.07",
     "minutes": "7분",
     "title": "앱 가격과 현장 가격이 다를 때 먼저 확인할 것",
