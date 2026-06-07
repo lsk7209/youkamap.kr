@@ -263,8 +263,8 @@
   },
   {
     "slug": "forty-liter-fuel-cost",
-    "status": "scheduled",
-    "publishedAt": "2026-06-07T01:00:00.000Z",
+    "status": "published",
+    "publishedAt": "2026-06-07T05:51:00.066Z",
     "date": "06.07",
     "minutes": "6분",
     "title": "40리터 주유비 계산, 작은 가격 차이가 커지는 순간",
