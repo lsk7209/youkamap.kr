@@ -6,7 +6,7 @@ const domain = "https://youkamap.kr";
 const articlePath = path.join(root, "content", "articles.json");
 const articles = JSON.parse(fs.readFileSync(articlePath, "utf8"));
 
-const autoAds = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8602787823938536" crossorigin="anonymous"></script>`;
+const autoAds = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3050601904412736" crossorigin="anonymous"></script>`;
 
 function esc(value) {
   return String(value ?? "")
