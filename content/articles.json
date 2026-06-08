@@ -387,8 +387,8 @@
   },
   {
     "slug": "opinet-radius-search",
-    "status": "scheduled",
-    "publishedAt": "2026-06-07T21:00:00.000Z",
+    "status": "published",
+    "publishedAt": "2026-06-08T06:05:50.785Z",
     "date": "06.08",
     "minutes": "6분",
     "title": "오피넷 반경 검색, 가까운 곳이 항상 싼 것은 아니다",
