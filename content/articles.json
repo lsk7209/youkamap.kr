@@ -542,9 +542,9 @@
   },
   {
     "slug": "seoul-mapo-fuel-price",
-    "status": "scheduled",
-    "publishedAt": "2026-06-08T22:00:00.000Z",
-    "date": "06.09",
+    "status": "published",
+    "publishedAt": "2026-06-09T19:28:31.320Z",
+    "date": "06.10",
     "minutes": "7분",
     "title": "마포 휘발유 가격, 도심 이동 전 확인해야 할 기준",
     "mainKeyword": "마포 휘발유 가격",

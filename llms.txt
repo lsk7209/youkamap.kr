@@ -3,6 +3,7 @@
 유가지도는 주유소 가격, 유류세, 지역별 유가, 차량 유지비를 운전자 관점에서 설명하는 한국어 사이트입니다.
 
 ## 공개 글
+- 마포 휘발유 가격, 도심 이동 전 확인해야 할 기준: https://youkamap.kr/blog/seoul-mapo-fuel-price/
 - 강남 주유소 가격, 비싸 보이는 이유를 분리해서 보기: https://youkamap.kr/blog/seoul-gangnam-fuel-price/
 - 주유 앱 확인 루틴, 3분 안에 비싼 선택 피하기: https://youkamap.kr/blog/fuel-app-reading-routine/
 - 최저가 주유소가 최선이 아닐 때, 대기시간까지 비교하기: https://youkamap.kr/blog/opinet-cheapest-not-best/
