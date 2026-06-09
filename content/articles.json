@@ -480,9 +480,9 @@
   },
   {
     "slug": "fuel-app-reading-routine",
-    "status": "scheduled",
-    "publishedAt": "2026-06-08T12:00:00.000Z",
-    "date": "06.08",
+    "status": "published",
+    "publishedAt": "2026-06-09T04:21:15.232Z",
+    "date": "06.09",
     "minutes": "5분",
     "title": "주유 앱 확인 루틴, 3분 안에 비싼 선택 피하기",
     "mainKeyword": "주유 앱 확인 루틴",

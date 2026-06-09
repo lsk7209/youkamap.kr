@@ -3,6 +3,7 @@
 유가지도는 주유소 가격, 유류세, 지역별 유가, 차량 유지비를 운전자 관점에서 설명하는 한국어 사이트입니다.
 
 ## 공개 글
+- 주유 앱 확인 루틴, 3분 안에 비싼 선택 피하기: https://youkamap.kr/blog/fuel-app-reading-routine/
 - 최저가 주유소가 최선이 아닐 때, 대기시간까지 비교하기: https://youkamap.kr/blog/opinet-cheapest-not-best/
 - 오피넷 가격 업데이트 시간, 언제 확인해야 덜 헷갈릴까: https://youkamap.kr/blog/opinet-price-update-time/
 - 오피넷 반경 검색, 가까운 곳이 항상 싼 것은 아니다: https://youkamap.kr/blog/opinet-radius-search/
