@@ -604,9 +604,9 @@
   },
   {
     "slug": "seoul-songpa-fuel-price",
-    "status": "scheduled",
-    "publishedAt": "2026-06-09T08:00:00.000Z",
-    "date": "06.09",
+    "status": "published",
+    "publishedAt": "2026-06-10T12:35:24.747Z",
+    "date": "06.10",
     "minutes": "5분",
     "title": "송파 기름값, 대형 상권과 외곽 동선을 나눠 보기",
     "mainKeyword": "송파 기름값",
