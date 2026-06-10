@@ -3,6 +3,7 @@
 유가지도는 주유소 가격, 유류세, 지역별 유가, 차량 유지비를 운전자 관점에서 설명하는 한국어 사이트입니다.
 
 ## 공개 글
+- 노원 주유소 가격, 생활권 안에서 절약폭 찾는 법: https://youkamap.kr/blog/seoul-nowon-fuel-price/
 - 송파 기름값, 대형 상권과 외곽 동선을 나눠 보기: https://youkamap.kr/blog/seoul-songpa-fuel-price/
 - 종로 주유소 가격, 업무 이동 차량은 어디서 비교할까: https://youkamap.kr/blog/seoul-jongno-fuel-price/
 - 마포 휘발유 가격, 도심 이동 전 확인해야 할 기준: https://youkamap.kr/blog/seoul-mapo-fuel-price/
