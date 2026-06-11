@@ -759,9 +759,9 @@
   },
   {
     "slug": "daejeon-fuel-price",
-    "status": "scheduled",
-    "publishedAt": "2026-06-10T09:00:00.000Z",
-    "date": "06.10",
+    "status": "published",
+    "publishedAt": "2026-06-11T22:13:02.630Z",
+    "date": "06.12",
     "minutes": "6분",
     "title": "대전 기름값, 고속도로 진입 전 확인하면 좋은 지점",
     "mainKeyword": "대전 기름값",

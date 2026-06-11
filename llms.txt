@@ -3,6 +3,7 @@
 유가지도는 주유소 가격, 유류세, 지역별 유가, 차량 유지비를 운전자 관점에서 설명하는 한국어 사이트입니다.
 
 ## 공개 글
+- 대전 기름값, 고속도로 진입 전 확인하면 좋은 지점: https://youkamap.kr/blog/daejeon-fuel-price/
 - 대구 휘발유 가격, 도심과 외곽 차이를 읽는 기준: https://youkamap.kr/blog/daegu-gasoline-price/
 - 인천 주유소 가격, 공항·항만 동선에서 비교하는 법: https://youkamap.kr/blog/incheon-fuel-route/
 - 부산 기름값 확인, 해운대와 서부산을 같은 기준으로 보지 말기: https://youkamap.kr/blog/busan-fuel-price-check/
