@@ -821,9 +821,9 @@
   },
   {
     "slug": "diesel-truck-route-cost",
-    "status": "scheduled",
-    "publishedAt": "2026-06-10T19:00:00.000Z",
-    "date": "06.11",
+    "status": "published",
+    "publishedAt": "2026-06-12T15:35:52.507Z",
+    "date": "06.13",
     "minutes": "4분",
     "title": "경유 화물차 주유비, 노선별로 계산해야 하는 이유",
     "mainKeyword": "경유 화물차 주유비",
