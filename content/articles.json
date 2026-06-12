@@ -852,9 +852,9 @@
   },
   {
     "slug": "diesel-passenger-car-maintenance",
-    "status": "scheduled",
-    "publishedAt": "2026-06-11T00:00:00.000Z",
-    "date": "06.11",
+    "status": "published",
+    "publishedAt": "2026-06-12T21:04:26.152Z",
+    "date": "06.13",
     "minutes": "5분",
     "title": "경유 승용차 유지비, 연비만 보면 빠지는 비용",
     "mainKeyword": "경유 승용차 유지비",
