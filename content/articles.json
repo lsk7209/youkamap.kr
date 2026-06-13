@@ -883,9 +883,9 @@
   },
   {
     "slug": "diesel-price-volatility",
-    "status": "scheduled",
-    "publishedAt": "2026-06-11T05:00:00.000Z",
-    "date": "06.11",
+    "status": "published",
+    "publishedAt": "2026-06-13T06:31:07.533Z",
+    "date": "06.13",
     "minutes": "6분",
     "title": "경유 가격 변동, 휘발유보다 크게 느껴지는 구간",
     "mainKeyword": "경유 가격 변동",
