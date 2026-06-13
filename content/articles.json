@@ -945,9 +945,9 @@
   },
   {
     "slug": "diesel-refuel-timing",
-    "status": "scheduled",
-    "publishedAt": "2026-06-11T15:00:00.000Z",
-    "date": "06.12",
+    "status": "published",
+    "publishedAt": "2026-06-13T18:21:59.827Z",
+    "date": "06.14",
     "minutes": "4분",
     "title": "경유 주유 타이밍, 장거리 전날과 당일의 판단법",
     "mainKeyword": "경유 주유 타이밍",
