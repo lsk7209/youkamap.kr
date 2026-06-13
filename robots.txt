@@ -1,4 +1,19 @@
 User-agent: *
 Allow: /
 
+# AI 크롤러 허용 (GEO 전략)
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: anthropic-ai
+User-agent: PerplexityBot
+User-agent: OAI-SearchBot
+User-agent: Google-Extended
+User-agent: Yeti
+User-agent: Daumoa
+Allow: /
+
+# 비매너 크롤러 차단
+User-agent: Bytespider
+Disallow: /
+
 Sitemap: https://youkamap.kr/sitemap.xml
