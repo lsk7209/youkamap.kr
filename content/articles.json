@@ -976,9 +976,9 @@
   },
   {
     "slug": "lpg-taxi-fuel-cost",
-    "status": "scheduled",
-    "publishedAt": "2026-06-11T20:00:00.000Z",
-    "date": "06.12",
+    "status": "published",
+    "publishedAt": "2026-06-14T00:19:11.962Z",
+    "date": "06.14",
     "minutes": "5분",
     "title": "LPG 택시 연료비, 하루 운행거리로 손익을 따져보기",
     "mainKeyword": "LPG 택시 연료비",
