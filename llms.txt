@@ -3,6 +3,7 @@
 유가지도는 주유소 가격, 유류세, 지역별 유가, 차량 유지비를 운전자 관점에서 설명하는 한국어 사이트입니다.
 
 ## 공개 글
+- LPG 충전소 접근성, 가격보다 중요한 변수일 수 있다: https://youkamap.kr/blog/lpg-station-access/
 - LPG 중고차 구매 전 연료비보다 먼저 볼 것: https://youkamap.kr/blog/lpg-used-car-check/
 - LPG 택시 연료비, 하루 운행거리로 손익을 따져보기: https://youkamap.kr/blog/lpg-taxi-fuel-cost/
 - 경유 주유 타이밍, 장거리 전날과 당일의 판단법: https://youkamap.kr/blog/diesel-refuel-timing/
