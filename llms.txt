@@ -3,6 +3,7 @@
 유가지도는 주유소 가격, 유류세, 지역별 유가, 차량 유지비를 운전자 관점에서 설명하는 한국어 사이트입니다.
 
 ## 공개 글
+- 고속도로 진입 전 주유, 언제 실제로 이득일까: https://youkamap.kr/blog/highway-refuel-before-entry/
 - LPG와 하이브리드 유지비, 1년 주행거리별 선택 기준: https://youkamap.kr/blog/lpg-hybrid-comparison/
 - 패밀리카 LPG 유지비, 주말 장거리 기준으로 계산하기: https://youkamap.kr/blog/lpg-family-car-cost/
 - LPG 충전소 접근성, 가격보다 중요한 변수일 수 있다: https://youkamap.kr/blog/lpg-station-access/
