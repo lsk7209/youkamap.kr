@@ -3,6 +3,7 @@
 유가지도는 주유소 가격, 유류세, 지역별 유가, 차량 유지비를 운전자 관점에서 설명하는 한국어 사이트입니다.
 
 ## 공개 글
+- 유류세 인하 종료 가능성, 운전자가 먼저 볼 신호: https://youkamap.kr/blog/fuel-tax-cut-end-impact/
 - 렌터카 주유 규정, 반납 전 손해 보지 않는 확인법: https://youkamap.kr/blog/rental-car-refuel-rule/
 - 연휴 주유 체크리스트, 출발 전날 확인할 5가지: https://youkamap.kr/blog/holiday-fuel-checklist/
 - 장거리 운전 주유 계획, 중간 주유를 줄이는 법: https://youkamap.kr/blog/long-distance-refuel-plan/
