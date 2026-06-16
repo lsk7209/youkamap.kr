@@ -1255,9 +1255,9 @@
   },
   {
     "slug": "rental-car-refuel-rule",
-    "status": "scheduled",
-    "publishedAt": "2026-06-13T17:00:00.000Z",
-    "date": "06.14",
+    "status": "published",
+    "publishedAt": "2026-06-16T05:27:44.645Z",
+    "date": "06.16",
     "minutes": "6분",
     "title": "렌터카 주유 규정, 반납 전 손해 보지 않는 확인법",
     "mainKeyword": "렌터카 주유 규정",
