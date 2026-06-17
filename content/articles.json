@@ -1441,9 +1441,9 @@
   },
   {
     "slug": "exchange-rate-fuel-price",
-    "status": "scheduled",
-    "publishedAt": "2026-06-14T23:00:00.000Z",
-    "date": "06.15",
+    "status": "published",
+    "publishedAt": "2026-06-17T18:30:55.972Z",
+    "date": "06.18",
     "minutes": "4분",
     "title": "환율이 기름값에 미치는 영향, 뉴스 숫자보다 봐야 할 것",
     "mainKeyword": "환율 기름값 영향",
