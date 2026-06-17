@@ -3,6 +3,7 @@
 유가지도는 주유소 가격, 유류세, 지역별 유가, 차량 유지비를 운전자 관점에서 설명하는 한국어 사이트입니다.
 
 ## 공개 글
+- 경유 세금 변화, 물류비와 소비자 가격을 함께 보기: https://youkamap.kr/blog/diesel-tax-change-impact/
 - 휘발유 세금 인하 계산, 리터당 체감액은 왜 다를까: https://youkamap.kr/blog/gasoline-tax-break-calculation/
 - 유류세 정책 일정, 기사보다 고시를 먼저 봐야 하는 이유: https://youkamap.kr/blog/fuel-tax-policy-calendar/
 - 교통에너지환경세, 휘발유 가격에 남는 구조: https://youkamap.kr/blog/transport-energy-tax/
