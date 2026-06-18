@@ -3,6 +3,7 @@
 유가지도는 주유소 가격, 유류세, 지역별 유가, 차량 유지비를 운전자 관점에서 설명하는 한국어 사이트입니다.
 
 ## 공개 글
+- 정유사 재고와 주유소 가격, 시간차를 이해하는 법: https://youkamap.kr/blog/oil-inventory-fuel-price/
 - 두바이유와 국내 휘발유, 왜 바로 연결되지 않을까: https://youkamap.kr/blog/dubai-oil-korea-price/
 - 환율이 기름값에 미치는 영향, 뉴스 숫자보다 봐야 할 것: https://youkamap.kr/blog/exchange-rate-fuel-price/
 - 경유 세금 변화, 물류비와 소비자 가격을 함께 보기: https://youkamap.kr/blog/diesel-tax-change-impact/

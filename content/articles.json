@@ -1503,9 +1503,9 @@
   },
   {
     "slug": "oil-inventory-fuel-price",
-    "status": "scheduled",
-    "publishedAt": "2026-06-15T09:00:00.000Z",
-    "date": "06.15",
+    "status": "published",
+    "publishedAt": "2026-06-18T04:58:53.576Z",
+    "date": "06.18",
     "minutes": "6분",
     "title": "정유사 재고와 주유소 가격, 시간차를 이해하는 법",
     "mainKeyword": "정유사 재고 주유소 가격",
