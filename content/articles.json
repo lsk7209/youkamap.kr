@@ -1596,9 +1596,9 @@
   },
   {
     "slug": "card-fuel-discount",
-    "status": "scheduled",
-    "publishedAt": "2026-06-16T00:00:00.000Z",
-    "date": "06.16",
+    "status": "published",
+    "publishedAt": "2026-06-19T01:51:19.407Z",
+    "date": "06.19",
     "minutes": "5분",
     "title": "주유 할인카드, 리터당 할인보다 전월실적을 먼저 보기",
     "mainKeyword": "주유 할인카드",
