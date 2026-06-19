@@ -1689,9 +1689,9 @@
   },
   {
     "slug": "fuel-receipt-check",
-    "status": "scheduled",
-    "publishedAt": "2026-06-16T15:00:00.000Z",
-    "date": "06.17",
+    "status": "published",
+    "publishedAt": "2026-06-19T21:18:58.413Z",
+    "date": "06.20",
     "minutes": "4분",
     "title": "주유 영수증 확인, 가격 오류를 빨리 발견하는 항목",
     "mainKeyword": "주유 영수증 확인",
