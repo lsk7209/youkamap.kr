@@ -3,6 +3,7 @@
 유가지도는 주유소 가격, 유류세, 지역별 유가, 차량 유지비를 운전자 관점에서 설명하는 한국어 사이트입니다.
 
 ## 공개 글
+- 1대 차량 가정의 주유 루틴, 주말 이동을 기준으로 짜기: https://youkamap.kr/blog/one-car-family-fuel-plan/
 - 월 주유비 예산, 리터당 가격보다 주행 패턴이 먼저다: https://youkamap.kr/blog/monthly-fuel-budget/
 - 주유 영수증 확인, 가격 오류를 빨리 발견하는 항목: https://youkamap.kr/blog/fuel-receipt-check/
 - 법인차 주유카드, 비용 통제와 절약을 동시에 잡는 법: https://youkamap.kr/blog/company-car-fuel-card/

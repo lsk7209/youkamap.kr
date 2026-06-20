@@ -1751,9 +1751,9 @@
   },
   {
     "slug": "one-car-family-fuel-plan",
-    "status": "scheduled",
-    "publishedAt": "2026-06-17T01:00:00.000Z",
-    "date": "06.17",
+    "status": "published",
+    "publishedAt": "2026-06-20T11:24:54.772Z",
+    "date": "06.20",
     "minutes": "6분",
     "title": "1대 차량 가정의 주유 루틴, 주말 이동을 기준으로 짜기",
     "mainKeyword": "가정 주유 루틴",
