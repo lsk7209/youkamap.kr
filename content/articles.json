@@ -1720,9 +1720,9 @@
   },
   {
     "slug": "monthly-fuel-budget",
-    "status": "scheduled",
-    "publishedAt": "2026-06-16T20:00:00.000Z",
-    "date": "06.17",
+    "status": "published",
+    "publishedAt": "2026-06-20T04:38:01.686Z",
+    "date": "06.20",
     "minutes": "5분",
     "title": "월 주유비 예산, 리터당 가격보다 주행 패턴이 먼저다",
     "mainKeyword": "월 주유비 예산",
