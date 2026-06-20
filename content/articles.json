@@ -1782,9 +1782,9 @@
   },
   {
     "slug": "two-car-family-fuel-cost",
-    "status": "scheduled",
-    "publishedAt": "2026-06-17T06:00:00.000Z",
-    "date": "06.17",
+    "status": "published",
+    "publishedAt": "2026-06-20T16:44:51.126Z",
+    "date": "06.21",
     "minutes": "7분",
     "title": "2대 차량 주유비, 차종별로 다른 절약 기준",
     "mainKeyword": "2대 차량 주유비",
