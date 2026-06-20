@@ -1813,9 +1813,9 @@
   },
   {
     "slug": "commuter-fuel-cost",
-    "status": "scheduled",
-    "publishedAt": "2026-06-17T11:00:00.000Z",
-    "date": "06.17",
+    "status": "published",
+    "publishedAt": "2026-06-20T22:20:15.241Z",
+    "date": "06.21",
     "minutes": "4분",
     "title": "출퇴근 주유비 절약, 왕복거리별로 달라지는 판단",
     "mainKeyword": "출퇴근 주유비 절약",
