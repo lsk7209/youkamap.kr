@@ -1875,9 +1875,9 @@
   },
   {
     "slug": "senior-driver-fuel-check",
-    "status": "scheduled",
-    "publishedAt": "2026-06-17T21:00:00.000Z",
-    "date": "06.18",
+    "status": "published",
+    "publishedAt": "2026-06-21T13:16:47.152Z",
+    "date": "06.21",
     "minutes": "6분",
     "title": "부모님 차량 주유비, 대신 확인할 때 놓치기 쉬운 것",
     "mainKeyword": "부모님 차량 주유비",
