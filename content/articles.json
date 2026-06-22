@@ -1968,9 +1968,9 @@
   },
   {
     "slug": "small-car-fuel-cost",
-    "status": "scheduled",
-    "publishedAt": "2026-06-18T12:00:00.000Z",
-    "date": "06.18",
+    "status": "published",
+    "publishedAt": "2026-06-22T12:23:55.735Z",
+    "date": "06.22",
     "minutes": "5분",
     "title": "경차 주유비, 세제 혜택과 실제 주행비를 나눠 보기",
     "mainKeyword": "경차 주유비",
