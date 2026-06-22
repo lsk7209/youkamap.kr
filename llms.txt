@@ -3,6 +3,7 @@
 유가지도는 주유소 가격, 유류세, 지역별 유가, 차량 유지비를 운전자 관점에서 설명하는 한국어 사이트입니다.
 
 ## 공개 글
+- SUV 주유비, 연비보다 주행 조건이 크게 작동한다: https://youkamap.kr/blog/suv-fuel-cost/
 - 경차 주유비, 세제 혜택과 실제 주행비를 나눠 보기: https://youkamap.kr/blog/small-car-fuel-cost/
 - 전기차와 휘발유차 유지비, 충전요금까지 함께 보기: https://youkamap.kr/blog/electric-vs-gasoline-cost/
 - 하이브리드 주유비, 연비가 좋아도 비교가 필요한 순간: https://youkamap.kr/blog/hybrid-fuel-cost/

@@ -1999,9 +1999,9 @@
   },
   {
     "slug": "suv-fuel-cost",
-    "status": "scheduled",
-    "publishedAt": "2026-06-18T17:00:00.000Z",
-    "date": "06.19",
+    "status": "published",
+    "publishedAt": "2026-06-22T17:47:21.018Z",
+    "date": "06.23",
     "minutes": "6분",
     "title": "SUV 주유비, 연비보다 주행 조건이 크게 작동한다",
     "mainKeyword": "SUV 주유비",
