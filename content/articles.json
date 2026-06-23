@@ -2123,9 +2123,9 @@
   },
   {
     "slug": "fuel-price-trend-chart",
-    "status": "scheduled",
-    "publishedAt": "2026-06-19T13:00:00.000Z",
-    "date": "06.19",
+    "status": "published",
+    "publishedAt": "2026-06-23T22:37:38.055Z",
+    "date": "06.24",
     "minutes": "6분",
     "title": "기름값 추세 그래프, 상승과 하락을 과장 없이 읽기",
     "mainKeyword": "기름값 추세 그래프",
