@@ -3,6 +3,7 @@
 유가지도는 주유소 가격, 유류세, 지역별 유가, 차량 유지비를 운전자 관점에서 설명하는 한국어 사이트입니다.
 
 ## 공개 글
+- 주간 기름값 확인법, 월요일과 금요일 숫자가 다른 이유: https://youkamap.kr/blog/weekly-fuel-check/
 - 기름값 알림 설정, 매일 확인하지 않아도 되는 기준: https://youkamap.kr/blog/fuel-price-alert/
 - 소상공인 배송 주유비, 매출보다 먼저 새는 비용 찾기: https://youkamap.kr/blog/company-delivery-fuel-cost/
 - SUV 주유비, 연비보다 주행 조건이 크게 작동한다: https://youkamap.kr/blog/suv-fuel-cost/
