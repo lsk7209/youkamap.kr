@@ -2061,9 +2061,9 @@
   },
   {
     "slug": "fuel-price-alert",
-    "status": "scheduled",
-    "publishedAt": "2026-06-19T03:00:00.000Z",
-    "date": "06.19",
+    "status": "published",
+    "publishedAt": "2026-06-23T08:36:41.788Z",
+    "date": "06.23",
     "minutes": "4분",
     "title": "기름값 알림 설정, 매일 확인하지 않아도 되는 기준",
     "mainKeyword": "기름값 알림 설정",
