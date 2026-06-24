@@ -2185,9 +2185,9 @@
   },
   {
     "slug": "fuel-news-fact-check",
-    "status": "scheduled",
-    "publishedAt": "2026-06-19T23:00:00.000Z",
-    "date": "06.20",
+    "status": "published",
+    "publishedAt": "2026-06-24T12:28:26.308Z",
+    "date": "06.24",
     "minutes": "4분",
     "title": "유가 뉴스 팩트체크, 제목만 보고 주유 시점을 정하지 않기",
     "mainKeyword": "유가 뉴스 팩트체크",
