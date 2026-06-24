@@ -2154,9 +2154,9 @@
   },
   {
     "slug": "fuel-data-source",
-    "status": "scheduled",
-    "publishedAt": "2026-06-19T18:00:00.000Z",
-    "date": "06.20",
+    "status": "published",
+    "publishedAt": "2026-06-24T05:10:53.585Z",
+    "date": "06.24",
     "minutes": "7분",
     "title": "기름값 데이터 출처, 블로그 글보다 원자료를 확인하는 법",
     "mainKeyword": "기름값 데이터 출처",
