@@ -2216,9 +2216,9 @@
   },
   {
     "slug": "cheapest-area-not-cheapest-trip",
-    "status": "scheduled",
-    "publishedAt": "2026-06-20T04:00:00.000Z",
-    "date": "06.20",
+    "status": "published",
+    "publishedAt": "2026-06-24T18:04:57.011Z",
+    "date": "06.25",
     "minutes": "5분",
     "title": "싼 지역 주유소가 실제로는 손해인 경우",
     "mainKeyword": "싼 지역 주유소",
