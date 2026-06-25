@@ -2309,9 +2309,9 @@
   },
   {
     "slug": "night-refuel-price",
-    "status": "scheduled",
-    "publishedAt": "2026-06-20T19:00:00.000Z",
-    "date": "06.21",
+    "status": "published",
+    "publishedAt": "2026-06-25T11:48:40.258Z",
+    "date": "06.25",
     "minutes": "4분",
     "title": "야간 주유 가격, 시간대보다 중요한 확인 포인트",
     "mainKeyword": "야간 주유 가격",
