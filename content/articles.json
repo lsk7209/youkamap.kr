@@ -2278,9 +2278,9 @@
   },
   {
     "slug": "fuel-time-cost",
-    "status": "scheduled",
-    "publishedAt": "2026-06-20T14:00:00.000Z",
-    "date": "06.20",
+    "status": "published",
+    "publishedAt": "2026-06-25T04:21:01.688Z",
+    "date": "06.25",
     "minutes": "7분",
     "title": "주유 대기시간 비용, 할인액과 함께 계산하기",
     "mainKeyword": "주유 대기시간 비용",
