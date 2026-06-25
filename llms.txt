@@ -3,6 +3,7 @@
 유가지도는 주유소 가격, 유류세, 지역별 유가, 차량 유지비를 운전자 관점에서 설명하는 한국어 사이트입니다.
 
 ## 공개 글
+- 셀프주유 실수, 비용보다 큰 손해를 막는 순서: https://youkamap.kr/blog/self-refuel-mistakes/
 - 비 오는 날 주유, 가격보다 안전 동선을 먼저 보기: https://youkamap.kr/blog/rainy-day-refuel/
 - 야간 주유 가격, 시간대보다 중요한 확인 포인트: https://youkamap.kr/blog/night-refuel-price/
 - 주유 대기시간 비용, 할인액과 함께 계산하기: https://youkamap.kr/blog/fuel-time-cost/
