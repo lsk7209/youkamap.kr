@@ -2495,9 +2495,9 @@
   },
   {
     "slug": "tire-pressure-fuel-cost",
-    "status": "scheduled",
-    "publishedAt": "2026-06-22T01:00:00.000Z",
-    "date": "06.22",
+    "status": "published",
+    "publishedAt": "2026-06-26T23:20:54.879Z",
+    "date": "06.27",
     "minutes": "6분",
     "title": "타이어 공기압과 주유비, 체감 절약을 현실적으로 보기",
     "mainKeyword": "타이어 공기압 주유비",

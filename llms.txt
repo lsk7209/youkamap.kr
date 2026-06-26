@@ -3,6 +3,7 @@
 유가지도는 주유소 가격, 유류세, 지역별 유가, 차량 유지비를 운전자 관점에서 설명하는 한국어 사이트입니다.
 
 ## 공개 글
+- 타이어 공기압과 주유비, 체감 절약을 현실적으로 보기: https://youkamap.kr/blog/tire-pressure-fuel-cost/
 - 엔진오일과 연비, 주유비 절약에서 과장하지 말아야 할 것: https://youkamap.kr/blog/engine-oil-and-fuel-cost/
 - 옥탄가 뜻, 비싼 휘발유가 늘 좋은 것은 아니다: https://youkamap.kr/blog/octane-rating-guide/
 - 고급휘발유 필요 여부, 차종 설명서에서 확인할 기준: https://youkamap.kr/blog/premium-gasoline-need/
