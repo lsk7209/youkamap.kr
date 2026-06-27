@@ -3,6 +3,7 @@
 유가지도는 주유소 가격, 유류세, 지역별 유가, 차량 유지비를 운전자 관점에서 설명하는 한국어 사이트입니다.
 
 ## 공개 글
+- 영업직 주유 계획, 방문 순서가 주유비를 바꾼다: https://youkamap.kr/blog/sales-route-fuel-plan/
 - 회사 차량 주유 정책, 직원 불편 없이 비용 줄이는 법: https://youkamap.kr/blog/company-fleet-fuel-policy/
 - 연비운전 절약액, 습관 하나를 돈으로 환산하기: https://youkamap.kr/blog/eco-driving-fuel-saving/
 - 타이어 공기압과 주유비, 체감 절약을 현실적으로 보기: https://youkamap.kr/blog/tire-pressure-fuel-cost/

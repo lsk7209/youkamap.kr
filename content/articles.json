@@ -2588,9 +2588,9 @@
   },
   {
     "slug": "sales-route-fuel-plan",
-    "status": "scheduled",
-    "publishedAt": "2026-06-22T16:00:00.000Z",
-    "date": "06.23",
+    "status": "published",
+    "publishedAt": "2026-06-27T20:17:35.003Z",
+    "date": "06.28",
     "minutes": "5분",
     "title": "영업직 주유 계획, 방문 순서가 주유비를 바꾼다",
     "mainKeyword": "영업직 주유 계획",
