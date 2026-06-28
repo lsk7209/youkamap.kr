@@ -2650,9 +2650,9 @@
   },
   {
     "slug": "delivery-rider-fuel-cost",
-    "status": "scheduled",
-    "publishedAt": "2026-06-23T02:00:00.000Z",
-    "date": "06.23",
+    "status": "published",
+    "publishedAt": "2026-06-28T11:57:27.686Z",
+    "date": "06.28",
     "minutes": "7분",
     "title": "배달 라이더 유류비, 건당 수익에서 빠지는 금액 계산",
     "mainKeyword": "배달 라이더 유류비",
