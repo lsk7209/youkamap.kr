@@ -2681,9 +2681,9 @@
   },
   {
     "slug": "construction-equipment-fuel",
-    "status": "scheduled",
-    "publishedAt": "2026-06-23T07:00:00.000Z",
-    "date": "06.23",
+    "status": "published",
+    "publishedAt": "2026-06-28T18:16:08.902Z",
+    "date": "06.29",
     "minutes": "4분",
     "title": "건설 장비 유류비, 현장 거리와 단가를 함께 관리하기",
     "mainKeyword": "건설 장비 유류비",
