@@ -3,6 +3,7 @@
 유가지도는 주유소 가격, 유류세, 지역별 유가, 차량 유지비를 운전자 관점에서 설명하는 한국어 사이트입니다.
 
 ## 공개 글
+- 제주 휘발유 가격, 섬 지역 물류비를 감안해 보기: https://youkamap.kr/blog/jeju-gasoline-price/
 - 제주 렌터카 주유, 반납 전 가장 많이 헷갈리는 기준: https://youkamap.kr/blog/jeju-rental-car-fuel/
 - 건설 장비 유류비, 현장 거리와 단가를 함께 관리하기: https://youkamap.kr/blog/construction-equipment-fuel/
 - 배달 라이더 유류비, 건당 수익에서 빠지는 금액 계산: https://youkamap.kr/blog/delivery-rider-fuel-cost/
