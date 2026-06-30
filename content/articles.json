@@ -2836,9 +2836,9 @@
   },
   {
     "slug": "ulsan-fuel-price",
-    "status": "scheduled",
-    "publishedAt": "2026-06-24T08:00:00.000Z",
-    "date": "06.24",
+    "status": "published",
+    "publishedAt": "2026-06-30T00:16:38.200Z",
+    "date": "06.30",
     "minutes": "5분",
     "title": "울산 주유소 가격, 산업도시 동선에서 보는 차이",
     "mainKeyword": "울산 주유소 가격",
