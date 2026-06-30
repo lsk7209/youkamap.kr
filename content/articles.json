@@ -2929,9 +2929,9 @@
   },
   {
     "slug": "moving-day-fuel-cost",
-    "status": "scheduled",
-    "publishedAt": "2026-06-24T23:00:00.000Z",
-    "date": "06.25",
+    "status": "published",
+    "publishedAt": "2026-06-30T21:03:05.213Z",
+    "date": "07.01",
     "minutes": "4분",
     "title": "이사날 차량 유류비, 트럭과 승용차를 따로 계산하기",
     "mainKeyword": "이사날 유류비",
