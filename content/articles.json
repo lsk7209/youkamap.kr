@@ -2960,9 +2960,9 @@
   },
   {
     "slug": "school-run-fuel-cost",
-    "status": "scheduled",
-    "publishedAt": "2026-06-25T04:00:00.000Z",
-    "date": "06.25",
+    "status": "published",
+    "publishedAt": "2026-07-01T05:52:31.878Z",
+    "date": "07.01",
     "minutes": "5분",
     "title": "등하원 차량 주유비, 짧은 거리 반복 운행의 비용",
     "mainKeyword": "등하원 차량 주유비",
