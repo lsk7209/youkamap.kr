@@ -2991,9 +2991,9 @@
   },
   {
     "slug": "weekend-drive-fuel",
-    "status": "scheduled",
-    "publishedAt": "2026-06-25T09:00:00.000Z",
-    "date": "06.25",
+    "status": "published",
+    "publishedAt": "2026-07-01T13:39:48.185Z",
+    "date": "07.01",
     "minutes": "6분",
     "title": "주말 드라이브 주유비, 목적지보다 돌아오는 길을 먼저 보기",
     "mainKeyword": "주말 드라이브 주유비",
