@@ -3115,9 +3115,9 @@
   },
   {
     "slug": "fuel-price-complaint",
-    "status": "scheduled",
-    "publishedAt": "2026-06-26T05:00:00.000Z",
-    "date": "06.26",
+    "status": "published",
+    "publishedAt": "2026-07-02T16:59:53.110Z",
+    "date": "07.03",
     "minutes": "6분",
     "title": "주유소 가격 민원, 의심될 때 확인하고 남길 기록",
     "mainKeyword": "주유소 가격 민원",

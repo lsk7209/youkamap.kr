@@ -3,6 +3,7 @@
 유가지도는 주유소 가격, 유류세, 지역별 유가, 차량 유지비를 운전자 관점에서 설명하는 한국어 사이트입니다.
 
 ## 공개 글
+- 주유소 가격 민원, 의심될 때 확인하고 남길 기록: https://youkamap.kr/blog/fuel-price-complaint/
 - 주유소 리뷰 읽는 법, 가격과 무관한 신호 구분하기: https://youkamap.kr/blog/gas-station-review-reading/
 - 싼 주유소 품질 걱정, 확인할 수 있는 것과 없는 것: https://youkamap.kr/blog/cheap-gas-quality/
 - 기름값 절약 속설, 따라 하기 전에 숫자로 검증하기: https://youkamap.kr/blog/fuel-price-myths/
